@@ -423,7 +423,26 @@ class AipOcr extends AipBase
      * @var string 医疗诊断报告单识别
      */
     private $healthReportUrl = "https://aip.baidubce.com/rest/2.0/ocr/v1/health_report";
-
+    /**
+     * 人脸对比接口Url
+     */
+    private $faceContrastUrl = 'https://aip.baidubce.com/rest/2.0/face/v3/match';
+    /**
+     * 人脸检测接口url
+     */
+    private $fackCheckUrl = 'https://aip.baidubce.com/rest/2.0/face/v3/detect';
+    //人脸检测
+    public function faceCheck($options){
+        $url = $this->fackCheckUrl;
+        $res = $this->request($url, $options);
+        return $res;
+    }
+    //人脸对比
+    public function faceContrast($options){
+        $url = $this->faceContrastUrl;
+        $res = $this->request($url, $options);
+        return $res;
+    }
     /**
      * 通用文字识别接口
      *
