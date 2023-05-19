@@ -23,13 +23,6 @@ class IndexController extends AbstractController
 {
     use \Hyperf\Di\Aop\ProxyTrait;
     use \Hyperf\Di\Aop\PropertyHandlerTrait;
-    function __construct()
-    {
-        if (method_exists(parent::class, '__construct')) {
-            parent::__construct(...func_get_args());
-        }
-        $this->__handlePropertyHandler(__CLASS__);
-    }
     /**
      * 通过 `#[Inject]` 注解注入由注解声明的属性类型对象
      * 需要引入 use Hyperf\Di\Annotation\Inject;
@@ -37,6 +30,12 @@ class IndexController extends AbstractController
      */
     #[Inject]
     private $userService;
+    private $redis;
+    public function __construct()
+    {
+        $this->__handlePropertyHandler(__CLASS__);
+        $this->redis = ApplicationContext::getContainer()->get(\Hyperf\Redis\Redis::class);
+    }
     //    /**
     //     * @var UserService
     //     */
@@ -65,12 +64,10 @@ class IndexController extends AbstractController
     }
     public function setredis()
     {
-        $redis = ApplicationContext::getContainer()->get(\Hyperf\Redis\Redis::class);
-        return $redis->set("time", "看看现在时间 " . date("Y-m-d H:i:s", time()));
+        return $this->redis->set("time", "看看现在时间 " . date("Y-m-d H:i:s", time()));
     }
     public function getredis(ResponseInterface $response)
     {
-        $redis = ApplicationContext::getContainer()->get(\Hyperf\Redis\Redis::class);
-        return $response->json($redis->get('time'));
+        return $response->json($this->redis->get('time'));
     }
 }

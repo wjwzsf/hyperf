@@ -31,8 +31,13 @@ class IndexController extends AbstractController
      */
     #[Inject]
     private $userService;
+    private $redis;
 
-
+    public function __construct()
+    {
+        //redis 在这配置直接下面
+        $this->redis = ApplicationContext::getContainer()->get(\Hyperf\Redis\Redis::class);
+    }
 
 //    /**
 //     * @var UserService
@@ -63,12 +68,10 @@ class IndexController extends AbstractController
         return Member::find(7293);
     }
     public function setredis(){
-        $redis = ApplicationContext::getContainer()->get(\Hyperf\Redis\Redis::class);
-        return $redis->set("time", "看看现在时间 " . date("Y-m-d H:i:s",time()));
+        return $this->redis->set("time", "看看现在时间 " . date("Y-m-d H:i:s",time()));
     }
     public function getredis(ResponseInterface $response){
-        $redis = ApplicationContext::getContainer()->get(\Hyperf\Redis\Redis::class);
-        return $response->json($redis->get('time'));
+        return $response->json($this->redis->get('time'));
     }
 
 }
