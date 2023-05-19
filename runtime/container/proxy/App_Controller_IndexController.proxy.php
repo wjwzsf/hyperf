@@ -73,16 +73,4 @@ class IndexController extends AbstractController
         $redis = ApplicationContext::getContainer()->get(\Hyperf\Redis\Redis::class);
         return $response->json($redis->get('time'));
     }
-    /**
-     * rabbitmq
-     */
-    public function createOrder()
-    {
-        $order = new OrderTest();
-        $order_data = ['orderCode' => time(), 'status' => 1];
-        $order->orderCode = $order_data['orderCode'];
-        $order->status = $order_data['status'];
-        $order->save();
-        return "success";
-    }
 }
