@@ -12,6 +12,7 @@ declare(strict_types=1);
 namespace App\Controller;
 
 use App\Model\Member;
+use App\Model\OrderTest;
 use App\Service\UserService;
 use Hyperf\Context\ApplicationContext;
 use Hyperf\Di\Annotation\Inject;
@@ -69,4 +70,5 @@ class IndexController extends AbstractController
         $redis = ApplicationContext::getContainer()->get(\Hyperf\Redis\Redis::class);
         return $response->json($redis->get('time'));
     }
+
 }
