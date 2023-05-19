@@ -15,8 +15,8 @@
 * the License.
 */
 namespace App\Utils\AiSdk;
-use App\Utils\AiSdk\AipHttpClient;
-use App\Utils\AiSdk\AipHttpUtil;
+//use App\Utils\AiSdk\AipHttpClient;
+//use App\Utils\AiSdk\AipHttpUtil;
 
 /**
  * Aip Base 基类
@@ -106,7 +106,7 @@ class AipBase {
      *
      */
     public function setProxies($proxies){
-        $this->client->setConf($proxies);
+        return $this->client->setConf($proxies);
     }
 
     /**
