@@ -4,3 +4,4 @@
 [2023-05-19 02:38:45] sql.INFO: [145.05] select * from `ly_Member` where `ly_Member`.`id` = '7293' limit 1 [] []
 [2023-05-19 08:26:05] sql.INFO: [142.46] select `column_key` as `column_key`, `column_name` as `column_name`, `data_type` as `data_type`, `column_comment` as `column_comment`, `extra` as `extra`, `column_type` as `column_type` from information_schema.columns where `table_schema` = 'lhygv3_test' and `table_name` = 'ly_order_test' order by ORDINAL_POSITION [] []
 [2023-05-19 10:19:48] sql.INFO: [164.34] select * from `ly_Member` where `ly_Member`.`id` = '7293' limit 1 [] []
+[2023-05-20 02:28:30] sql.INFO: [148.79] insert into `ly_order_test` (`orderCode`, `status`, `updated_at`, `created_at`) values ('1684549709', '1', '2023-05-20 02:28:29', '2023-05-20 02:28:29') [] []

@@ -53,6 +53,8 @@ class IndexController extends AbstractController
 
     public function index()
     {
+        $secret = config('app.jwt_secret');
+        return $secret;
         //直接使用
         return $this->userService->getInfoById(1);
 

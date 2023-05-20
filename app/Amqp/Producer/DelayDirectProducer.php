@@ -18,7 +18,7 @@ use Hyperf\Amqp\Message\Type;
 class DelayDirectProducer extends ProducerMessage
 {
     use ProducerDelayedMessageTrait;
-    protected string $exchange = "ext.hyperf.delay";
+    protected string $exchange = "my_exchange";
     protected string $type = Type::DIRECT;
     protected string|array $routingKey='';
     public function __construct($data)

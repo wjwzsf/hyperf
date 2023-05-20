@@ -14,8 +14,14 @@ namespace App\Controller;
 use App\Amqp\Producer\DelayDirectProducer;
 use App\Model\OrderTest;
 use Hyperf\Amqp\Producer;
+use Hyperf\HttpServer\Annotation\AutoController;
 use Hyperf\Utils\ApplicationContext;
 
+/**
+ * Class OrderTestController
+ * @package App\Controller
+ */
+#[AutoController]
 class OrderTestController extends AbstractController
 {
 
@@ -30,7 +36,7 @@ class OrderTestController extends AbstractController
         $message = new DelayDirectProducer($json);
         $message->setDelayMs(10  * 1000);//定时10s
         $producer = ApplicationContext::getContainer()->get(Producer::class);
-        $producer->produce($message);
+        $result = $producer->produce($message);
         //插入数据库
         $order->orderCode = $order_data['orderCode'];
         $order->status = $order_data['status'];

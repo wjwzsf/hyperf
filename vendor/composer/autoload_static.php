@@ -140,6 +140,7 @@ class ComposerStaticInit6b06af777e53914ad5800e7378b6c70c
         ),
         'F' => 
         array (
+            'Firebase\\JWT\\' => 13,
             'Fig\\Http\\Message\\' => 17,
             'FastRoute\\' => 10,
         ),
@@ -498,6 +499,10 @@ class ComposerStaticInit6b06af777e53914ad5800e7378b6c70c
         array (
             0 => __DIR__ . '/..' . '/graham-campbell/result-type/src',
         ),
+        'Firebase\\JWT\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/firebase/php-jwt/src',
+        ),
         'Fig\\Http\\Message\\' => 
         array (
             0 => __DIR__ . '/..' . '/fig/http-message-util/src',
@@ -572,16 +577,21 @@ class ComposerStaticInit6b06af777e53914ad5800e7378b6c70c
     );
 
     public static $classMap = array (
+        'App\\Amqp\\Consumer\\DelayDirectConsumer' => __DIR__ . '/../..' . '/app/Amqp/Consumer/DelayDirectConsumer.php',
+        'App\\Amqp\\Producer\\DelayDirectProducer' => __DIR__ . '/../..' . '/app/Amqp/Producer/DelayDirectProducer.php',
         'App\\Controller\\AbstractController' => __DIR__ . '/../..' . '/app/Controller/AbstractController.php',
         'App\\Controller\\IndexController' => __DIR__ . '/../..' . '/app/Controller/IndexController.php',
         'App\\Controller\\OcrController' => __DIR__ . '/../..' . '/app/Controller/OcrController.php',
+        'App\\Controller\\OrderTestController' => __DIR__ . '/../..' . '/app/Controller/OrderTestController.php',
         'App\\Exception\\Handler\\AppExceptionHandler' => __DIR__ . '/../..' . '/app/Exception/Handler/AppExceptionHandler.php',
         'App\\Listener\\DbQueryExecutedListener' => __DIR__ . '/../..' . '/app/Listener/DbQueryExecutedListener.php',
         'App\\Listener\\ResumeExitCoordinatorListener' => __DIR__ . '/../..' . '/app/Listener/ResumeExitCoordinatorListener.php',
         'App\\Model\\Member' => __DIR__ . '/../..' . '/app/Model/Member.php',
         'App\\Model\\Model' => __DIR__ . '/../..' . '/app/Model/Model.php',
+        'App\\Model\\OrderTest' => __DIR__ . '/../..' . '/app/Model/OrderTest.php',
         'App\\Service\\TextRecognitionService' => __DIR__ . '/../..' . '/app/Service/TextRecognitionService.php',
         'App\\Service\\UserService' => __DIR__ . '/../..' . '/app/Service/UserService.php',
+        'App\\Service\\UserServiceInterface' => __DIR__ . '/../..' . '/app/Service/UserServiceInterface.php',
         'App\\Utils\\AiSdk\\AipBase' => __DIR__ . '/../..' . '/app/Utils/AiSdk/AipBase.php',
         'App\\Utils\\AiSdk\\AipHttpClient' => __DIR__ . '/../..' . '/app/Utils/AiSdk/AipHttpClient.php',
         'App\\Utils\\AiSdk\\AipOcr' => __DIR__ . '/../..' . '/app/Utils/AiSdk/AipOcr.php',
@@ -851,6 +861,13 @@ class ComposerStaticInit6b06af777e53914ad5800e7378b6c70c
         'FastRoute\\RouteParser\\Std' => __DIR__ . '/..' . '/nikic/fast-route/src/RouteParser/Std.php',
         'Fig\\Http\\Message\\RequestMethodInterface' => __DIR__ . '/..' . '/fig/http-message-util/src/RequestMethodInterface.php',
         'Fig\\Http\\Message\\StatusCodeInterface' => __DIR__ . '/..' . '/fig/http-message-util/src/StatusCodeInterface.php',
+        'Firebase\\JWT\\BeforeValidException' => __DIR__ . '/..' . '/firebase/php-jwt/src/BeforeValidException.php',
+        'Firebase\\JWT\\CachedKeySet' => __DIR__ . '/..' . '/firebase/php-jwt/src/CachedKeySet.php',
+        'Firebase\\JWT\\ExpiredException' => __DIR__ . '/..' . '/firebase/php-jwt/src/ExpiredException.php',
+        'Firebase\\JWT\\JWK' => __DIR__ . '/..' . '/firebase/php-jwt/src/JWK.php',
+        'Firebase\\JWT\\JWT' => __DIR__ . '/..' . '/firebase/php-jwt/src/JWT.php',
+        'Firebase\\JWT\\Key' => __DIR__ . '/..' . '/firebase/php-jwt/src/Key.php',
+        'Firebase\\JWT\\SignatureInvalidException' => __DIR__ . '/..' . '/firebase/php-jwt/src/SignatureInvalidException.php',
         'GrahamCampbell\\ResultType\\Error' => __DIR__ . '/..' . '/graham-campbell/result-type/src/Error.php',
         'GrahamCampbell\\ResultType\\Result' => __DIR__ . '/..' . '/graham-campbell/result-type/src/Result.php',
         'GrahamCampbell\\ResultType\\Success' => __DIR__ . '/..' . '/graham-campbell/result-type/src/Success.php',

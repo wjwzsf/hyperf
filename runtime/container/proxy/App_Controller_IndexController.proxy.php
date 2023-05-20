@@ -34,6 +34,7 @@ class IndexController extends AbstractController
     public function __construct()
     {
         $this->__handlePropertyHandler(__CLASS__);
+        //redis 在这配置直接下面
         $this->redis = ApplicationContext::getContainer()->get(\Hyperf\Redis\Redis::class);
     }
     //    /**
@@ -48,6 +49,8 @@ class IndexController extends AbstractController
     //    }
     public function index()
     {
+        $secret = config('app.jwt_secret');
+        return $secret;
         //直接使用
         return $this->userService->getInfoById(1);
         //        $user = $this->request->input('user', 'Hyperf');
