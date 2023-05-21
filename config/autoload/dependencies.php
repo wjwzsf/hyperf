@@ -11,6 +11,5 @@ declare(strict_types=1);
  */
 return [
     'dependencies'=>[
-        \App\Service\UserServiceInterface::class=>\App\Service\UserService::class
     ]
 ];
