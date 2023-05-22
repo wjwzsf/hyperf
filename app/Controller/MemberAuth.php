@@ -26,11 +26,12 @@ class MemberAuth extends AbstractController
     #[Inject]
     private UploadServer $uploadServer;
     #[PostMapping(path: "idcard")]
-    public function ocridcard(){
+    public function idcard(){
         // 获取所有参数和文件
         $params = $this->request->all();
-        $result = $this->uploadServer->uploadImage(['size'=>'10240','name'=>'front']);
-        return $result;
+        $imgurl = $this->uploadServer->uploadImage(['size'=>'10240','name'=>'front']);
+        return $this->response->json($imgurl);
+
 //        $data=[
 //            'type'=>'front'
 //        ];

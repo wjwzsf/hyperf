@@ -21,7 +21,7 @@ class UploadServer
     /**
      * User: wujiawei
      * DateTime: 2023/5/22 11:33
-     * describe: 上传图片
+     * describe: 上传图片,最后返回路径，所有图片都存到tmp下
      * @param $data name图片名称 size图片大小
      * @return array
      */
@@ -48,13 +48,7 @@ class UploadServer
         $filename = $this->getFilename($file);
         // 将上传文件移动到指定路径
         $file->moveTo( './tmp/' . $filename);
-        return [
-            'code' => 200,
-            'message' => 'Upload success.',
-            'data' => [
-                'url' => "/tmp/{$filename}",
-            ],
-        ];
+        return "/tmp/{$filename}";
     }
 
     //生成唯一的文件名
