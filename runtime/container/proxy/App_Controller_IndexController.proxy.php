@@ -13,6 +13,7 @@ namespace App\Controller;
 
 use App\Model\Member;
 use App\Model\OrderTest;
+use App\Service\TextRecognitionService;
 use App\Service\UserService;
 use Hyperf\Context\ApplicationContext;
 use Hyperf\Di\Annotation\Inject;
@@ -37,16 +38,14 @@ class IndexController extends AbstractController
         //redis 在这配置直接下面
         $this->redis = ApplicationContext::getContainer()->get(\Hyperf\Redis\Redis::class);
     }
-    //    /**
-    //     * @var UserService
-    //     */
-    //    private $userService;
-    //
-    //    //通过构造函数的参数上声明参数类型完成自动注入
-    //    public function __construct(UserService $userService)
-    //    {
-    //        $this->userService=$userService;
-    //    }
+    #[Inject]
+    private TextRecognitionService $recognitionService;
+    public function ocr()
+    {
+        $data = ['type' => 'front'];
+        $result = $this->recognitionService->idcard($data);
+        return $result;
+    }
     public function index()
     {
         //        $secret = config('app.jwt_secret');

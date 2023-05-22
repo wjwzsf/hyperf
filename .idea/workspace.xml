@@ -2,9 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="35965e68-5e65-409f-bc21-635c2a6c9c24" name="默认变更列表" comment="">
+      <change afterPath="$PROJECT_DIR$/app/Controller/MemberAuth.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Service/UploadServer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/hyperf.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/hyperf.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Model/Member.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Model/Member.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/logs/hyperf.log" beforeDir="false" afterPath="$PROJECT_DIR$/runtime/logs/hyperf.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Controller/IndexController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Controller/IndexController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Service/TextRecognitionService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Service/TextRecognitionService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/autoload/dependencies.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/autoload/dependencies.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/container/classes.cache" beforeDir="false" afterPath="$PROJECT_DIR$/runtime/container/classes.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/container/proxy/App_Controller_IndexController.proxy.php" beforeDir="false" afterPath="$PROJECT_DIR$/runtime/container/proxy/App_Controller_IndexController.proxy.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/container/scan.cache" beforeDir="false" afterPath="$PROJECT_DIR$/runtime/container/scan.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/hyperf.pid" beforeDir="false" afterPath="$PROJECT_DIR$/runtime/hyperf.pid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_files.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_files.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/installed.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/installed.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/installed.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/installed.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -155,6 +172,11 @@
       <path value="$PROJECT_DIR$/vendor/paragonie/constant_time_encoding" />
       <path value="$PROJECT_DIR$/vendor/hyperf/amqp" />
       <path value="$PROJECT_DIR$/vendor/phpseclib/phpseclib" />
+      <path value="$PROJECT_DIR$/vendor/egulias/email-validator" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php72" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-idn" />
+      <path value="$PROJECT_DIR$/vendor/hyperf/translation" />
+      <path value="$PROJECT_DIR$/vendor/hyperf/validation" />
     </include_path>
   </component>
   <component name="ProjectId" id="2PzVDgKrmddVRPm6jYR07BRsb92" />
@@ -198,7 +220,7 @@
       <workItem from="1684479583669" duration="9911000" />
       <workItem from="1684505543492" duration="2031000" />
       <workItem from="1684546879619" duration="4349000" />
-      <workItem from="1684715469777" duration="4615000" />
+      <workItem from="1684715469777" duration="10510000" />
     </task>
     <task id="LOCAL-00001" summary="未能遵守PSR-4自动加载标准">
       <created>1684481589369</created>
@@ -256,7 +278,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684719595586</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Model 不自动管理 创建和修改">
+      <created>1684720541798</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1684720541798</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -269,6 +298,7 @@
     <MESSAGE value="强推" />
     <MESSAGE value="修改了一些东西" />
     <MESSAGE value="推送到了rabbitmq但是没有执行倒计时功能" />
-    <option name="LAST_COMMIT_MESSAGE" value="推送到了rabbitmq但是没有执行倒计时功能" />
+    <MESSAGE value="Model 不自动管理 创建和修改" />
+    <option name="LAST_COMMIT_MESSAGE" value="Model 不自动管理 创建和修改" />
   </component>
 </project>
