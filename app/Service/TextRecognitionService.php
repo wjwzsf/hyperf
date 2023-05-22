@@ -59,5 +59,6 @@ class TextRecognitionService
         $filePath = BASE_PATH . $data['localurl'];
         $image = file_get_contents($filePath);
         $result = $this->ocr->bankcard($image);
+        return $result;
     }
 }
