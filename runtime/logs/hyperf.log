@@ -8,3 +8,4 @@
 [2023-05-21 03:39:59] sql.INFO: [160.43] select * from `ly_Member` where `ly_Member`.`id` = '7293' limit 1 [] []
 [2023-05-22 01:09:12] sql.INFO: [145.62] select `code` from `ly_code` [] []
 [2023-05-22 01:27:05] sql.INFO: [159.4] insert into `ly_order_test` (`orderCode`, `status`, `updated_at`, `created_at`) values ('1684718824', '1', '2023-05-22 01:27:05', '2023-05-22 01:27:05') [] []
+[2023-05-22 01:35:05] sql.INFO: [133.6] insert into `ly_order_test` (`orderCode`, `status`, `updated_at`, `created_at`) values ('1684719305', '1', '2023-05-22 01:35:05', '2023-05-22 01:35:05') [] []

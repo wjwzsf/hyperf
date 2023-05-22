@@ -53,6 +53,10 @@ use Hyperf\DbConnection\Model\Model;
 class Member extends Model
 {
     /**
+     * @var bool 不自动管理 创建和修改
+     */
+    public bool $timestamps = false;
+    /**
      * The table associated with the model.
      */
     protected ?string $table = 'Member';
