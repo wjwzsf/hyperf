@@ -73,3 +73,22 @@ class IndexController extends AbstractController
         return $response->json($this->redis->get('time'));
     }
 }
+//use Hyperf\HttpServer\Request;
+//use Hyperf\HttpMessage\Upload\Input;
+//
+//public function upload(Request $request)
+//{
+//    // 获取请求参数的数组
+//    $params = $request->all();
+//
+//    // 判断是否有文件上传
+//    if (Input::hasFile('file')) {
+//        // 有文件上传
+//        // 进一步判断是图片还是其他类型的文件
+//        if (in_array(Input::getFile('file')->getClientMediaType(), ['image/jpeg', 'image/png'])) {
+//            // 是图片类型
+//        } else {
+//            // 其他类型的文件
+//        }
+//    }
+//}

@@ -50,14 +50,22 @@ class UploadServer
             $filename = $this->getFilename($file);
             // 将上传文件移动到指定路径
             $file->moveTo( BASE_PATH . '/public/images/' . $filename);
-            //上传到oss
-            @$this->aliyunUpload(BASE_PATH . '/public/images/' . $filename,$data['ossurl'].'/'.$filename);
-            return [
-                'code'=>200,
-                'url'=>$data['ossurl'].'/'.$filename,
-                'filename'=>$filename,
-                'localurl'=>'/public/images/'.$filename
-            ];
+            // 通过 isMoved(): bool 方法判断方法是否已移动
+            if ($file->isMoved()) {
+                //上传到oss
+                @$this->aliyunUpload(BASE_PATH . '/public/images/' . $filename,$data['ossurl'].'/'.$filename);
+                return [
+                    'code'=>200,
+                    'url'=>$data['ossurl'].'/'.$filename,
+                    'filename'=>$filename,
+                    'localurl'=>'/public/images/'.$filename
+                ];
+            }else{
+                return [
+                    'code'=>400,
+                    'message' => '文件上传失败，请重试',
+                ];
+            }
         }catch (\Exception $exception){
             return [
                 'code'=>400,
