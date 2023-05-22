@@ -34,7 +34,7 @@ class OrderTestController extends AbstractController
         //发布到rabbitmq
         $json = json_encode($order_data);
         $message = new DelayDirectProducer($json);
-        $message->setDelayMs(10  * 1000);//定时10s
+        $message->setDelayMs(10);//定时10s
         $producer = ApplicationContext::getContainer()->get(Producer::class);
         $result = $producer->produce($message);
         //插入数据库
