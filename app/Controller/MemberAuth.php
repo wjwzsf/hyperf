@@ -9,8 +9,6 @@ use App\Service\UploadServer;
 use Hyperf\Di\Annotation\Inject;
 use Hyperf\HttpServer\Annotation\Controller;
 use Hyperf\HttpServer\Annotation\PostMapping;
-use Hyperf\HttpServer\Contract\RequestInterface;
-use Hyperf\Validation\ValidatorFactory;
 
 #[Controller]
 class MemberAuth extends AbstractController
@@ -30,11 +28,19 @@ class MemberAuth extends AbstractController
         $imgReturn = $this->uploadServer->uploadImage(['size'=>'4096','name'=>$params['type']]);
         switch ($imgReturn['code']){
             case 200:
+                //识别功能
                 $data=[
                     'type'=>$params['type'],
                     'url'=>$imgReturn['url']
                 ];
-                $result = $this->recognitionService->idcard($data);
+                $checkData = $this->recognitionService->idcard($data);
+                //检测身份证正反面功能
+                $memberAuth = new \App\Dao\MemberAuth();
+                $result = $memberAuth->checkIdcard($checkData,$params['type']);
+                if ($result['code']==200){
+                    $result[$params['type'].'url']=$imgReturn['url'];
+                }
+                @unlink(BASE_PATH . $imgReturn['url']);
                 return $result;
                 break;
             case 400:
@@ -42,7 +48,6 @@ class MemberAuth extends AbstractController
                 return $this->response->json($imgReturn);
                 break;
         }
-
     }
 
     /**
