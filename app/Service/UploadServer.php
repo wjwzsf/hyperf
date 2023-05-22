@@ -24,6 +24,7 @@ class UploadServer
      * describe: 上传图片,最后返回路径，所有图片都存到tmp下
      * @param $data name图片名称 size图片大小
      * @return array
+     * 访问图片示例：http://localhost:9501/tmp/646b0171c962b.jpg
      */
     public function uploadImage($data)
     {
@@ -47,8 +48,8 @@ class UploadServer
         // 生成唯一的文件名
         $filename = $this->getFilename($file);
         // 将上传文件移动到指定路径
-        $file->moveTo( './tmp/' . $filename);
-        return "/tmp/{$filename}";
+        $file->moveTo( BASE_PATH . '/public/images/' . $filename);
+        return '/public/images/'.$filename;
     }
 
     //生成唯一的文件名
