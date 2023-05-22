@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "28e12d58ca4f84274c3193d2e51e0ab6",
+    "content-hash": "719999ab4659d5532454005ac9f07ec8",
     "packages": [
         {
             "name": "doctrine/deprecations",
@@ -2009,17 +2009,23 @@
         },
         {
             "name": "hyperf/guzzle",
-            "version": "v3.0.18",
+            "version": "v3.0.17",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hyperf/guzzle.git",
-                "reference": "44d3b1abfba72cb969ece8a5bf47818cc6d49a71"
+                "reference": "58de5f381139d5adda1c459a64dd42e52157e996"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hyperf/guzzle/zipball/44d3b1abfba72cb969ece8a5bf47818cc6d49a71",
-                "reference": "44d3b1abfba72cb969ece8a5bf47818cc6d49a71",
-                "shasum": ""
+                "url": "https://api.github.com/repos/hyperf/guzzle/zipball/58de5f381139d5adda1c459a64dd42e52157e996",
+                "reference": "58de5f381139d5adda1c459a64dd42e52157e996",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
             "require": {
                 "guzzlehttp/guzzle": "^6.3|^7.0",
@@ -2058,9 +2064,9 @@
             ],
             "support": {
                 "issues": "https://github.com/hyperf/guzzle/issues",
-                "source": "https://github.com/hyperf/guzzle/tree/v3.0.18"
+                "source": "https://github.com/hyperf/guzzle/tree/v3.0.17"
             },
-            "time": "2023-04-26T03:02:31+00:00"
+            "time": "2023-04-19T05:41:29+00:00"
         },
         {
             "name": "hyperf/http-message",

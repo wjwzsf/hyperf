@@ -20,6 +20,7 @@ class MemberAuth
                 if($checkData['words_result']['姓名']){
                     $idcard = $checkData['words_result']['公民身份号码']['words'];
                     $duplicates = 0;
+//                    $duplicates = Db::table('person_info')->where('idcard',$idcard)->count();
                     if($duplicates>0){
                         return [
                             'code'=>'400',

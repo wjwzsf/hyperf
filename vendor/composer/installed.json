@@ -2615,18 +2615,24 @@
         },
         {
             "name": "hyperf/guzzle",
-            "version": "v3.0.18",
-            "version_normalized": "3.0.18.0",
+            "version": "v3.0.17",
+            "version_normalized": "3.0.17.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hyperf/guzzle.git",
-                "reference": "44d3b1abfba72cb969ece8a5bf47818cc6d49a71"
+                "reference": "58de5f381139d5adda1c459a64dd42e52157e996"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hyperf/guzzle/zipball/44d3b1abfba72cb969ece8a5bf47818cc6d49a71",
-                "reference": "44d3b1abfba72cb969ece8a5bf47818cc6d49a71",
-                "shasum": ""
+                "url": "https://api.github.com/repos/hyperf/guzzle/zipball/58de5f381139d5adda1c459a64dd42e52157e996",
+                "reference": "58de5f381139d5adda1c459a64dd42e52157e996",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
             "require": {
                 "guzzlehttp/guzzle": "^6.3|^7.0",
@@ -2638,7 +2644,7 @@
                 "ext-curl": "Required for CURL handler support",
                 "hyperf/pool": "Required to use pool handler."
             },
-            "time": "2023-04-26T03:02:31+00:00",
+            "time": "2023-04-19T05:41:29+00:00",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -2667,7 +2673,7 @@
             ],
             "support": {
                 "issues": "https://github.com/hyperf/guzzle/issues",
-                "source": "https://github.com/hyperf/guzzle/tree/v3.0.18"
+                "source": "https://github.com/hyperf/guzzle/tree/v3.0.17"
             },
             "install-path": "../hyperf/guzzle"
         },

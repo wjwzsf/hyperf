@@ -4,14 +4,14 @@
  */
 namespace App\Service;
 
-use Hyperf\Context\ApplicationContext;
+use Hyperf\HttpMessage\Upload\UploadedFile;
 use Hyperf\HttpServer\Contract\RequestInterface;
 use Hyperf\Validation\ValidatorFactory;
-use Hyperf\HttpMessage\Upload\UploadedFile;
+use GuzzleHttp\Client;
 
 class UploadServer
 {
-
+    protected $client;
     public function __construct(RequestInterface $request, ValidatorFactory $validatorFactory)
     {
         $this->request = $request;
@@ -50,9 +50,13 @@ class UploadServer
             $filename = $this->getFilename($file);
             // 将上传文件移动到指定路径
             $file->moveTo( BASE_PATH . '/public/images/' . $filename);
+            //上传到oss
+            @$this->aliyunUpload(BASE_PATH . '/public/images/' . $filename,$data['ossurl'].'/'.$filename);
             return [
                 'code'=>200,
-                'url'=>'/public/images/'.$filename
+                'url'=>$data['ossurl'].'/'.$filename,
+                'filename'=>$filename,
+                'localurl'=>'/public/images/'.$filename
             ];
         }catch (\Exception $exception){
             return [
@@ -69,5 +73,33 @@ class UploadServer
         $uuid = uniqid();
         $ext = strtolower(pathinfo($file->getClientFilename(), PATHINFO_EXTENSION));
         return $uuid . '.' . $ext;
+    }
+
+    /**
+     * User: wujiawei
+     * DateTime: 2023/5/22 16:17
+     * describe: 上传文件到oss
+     * @param $file
+     * @param $keypath
+     * @return bool
+     */
+    private function aliyunUpload($file, $keypath)
+    {
+        $client = new Client();
+        $url = 'http://lhygtest.linggongbang.cn/lgb/upload';
+        $response = $client->post($url, [
+            'multipart' => [
+                [
+                    'name' => 'file',
+                    'contents' => fopen(realpath($file), 'r'),
+                ],
+                [
+                    'name' => 'key',
+                    'contents' => $keypath,
+                ],
+            ],
+        ]);
+        $result = json_decode($response->getBody(), true);
+        return $result;
     }
 }

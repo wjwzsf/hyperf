@@ -16,14 +16,6 @@ class TextRecognitionService
         $this->response=$response;
         $this->ocr = new AipOcr('17606770','mGqwCQCBfdweGbQTILshOz2r','cffxPsfr9RmD5vi2FHMI8hBmLmoxcZT5');
     }
-
-    public function recognize($filepath)
-    {
-        $image = file_get_contents($filepath);
-        $result = $this->client->basicGeneral($image);
-        return $result;
-    }
-
     /**
      * User: wujiawei
      * DateTime: 2023/5/22 14:41
@@ -32,7 +24,7 @@ class TextRecognitionService
      * @return array
      */
     public function idcard($data){
-        $filePath = BASE_PATH . $data['url'];
+        $filePath = BASE_PATH . $data['localurl'];
         $image = file_get_contents($filePath);
         $result = $this->ocr->idcard($image,$data['type']);
         return $result;
@@ -46,7 +38,7 @@ class TextRecognitionService
      * @return \App\Utils\AiSdk\mix|bool|mixed|string[]
      */
     public function faceCheck($data){
-        $filePath = BASE_PATH . $data['url'];
+        $filePath = BASE_PATH . $data['localurl'];
         //定义参数变量
         $options = array(
             "image"=>base64_encode(file_get_contents($filePath)),
@@ -64,7 +56,7 @@ class TextRecognitionService
      * @param $data
      */
     public function bankcard($data){
-        $filePath = BASE_PATH . $data['url'];
+        $filePath = BASE_PATH . $data['localurl'];
         $image = file_get_contents($filePath);
         $result = $this->ocr->bankcard($image);
     }

@@ -25,22 +25,24 @@ class MemberAuth extends AbstractController
     public function idcard(){
         // 获取所有参数和文件
         $params = $this->request->all();
-        $imgReturn = $this->uploadServer->uploadImage(['size'=>'4096','name'=>$params['type']]);
+        //size name 上传到oss的文件路径
+        $imgReturn = $this->uploadServer->uploadImage(['size'=>'4096','name'=>$params['type'],'ossurl'=>'Upload/V3/idcard/'.date('Y-m-d',time())]);
         switch ($imgReturn['code']){
             case 200:
                 //识别功能
                 $data=[
                     'type'=>$params['type'],
-                    'url'=>$imgReturn['url']
+                    'localurl'=>$imgReturn['localurl']
                 ];
                 $checkData = $this->recognitionService->idcard($data);
                 //检测身份证正反面功能
                 $memberAuth = new \App\Dao\MemberAuth();
                 $result = $memberAuth->checkIdcard($checkData,$params['type']);
                 if ($result['code']==200){
+                    //设置返回的地址
                     $result[$params['type'].'url']=$imgReturn['url'];
                 }
-                @unlink(BASE_PATH . $imgReturn['url']);
+                @unlink(BASE_PATH . $imgReturn['localurl']);
                 return $result;
                 break;
             case 400:
