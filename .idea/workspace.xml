@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="35965e68-5e65-409f-bc21-635c2a6c9c24" name="默认变更列表" comment="">
+      <change afterPath="$PROJECT_DIR$/app/Dao/MemberAuth.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Controller/MemberAuth.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Controller/MemberAuth.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Service/TextRecognitionService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Service/TextRecognitionService.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Service/UploadServer.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Service/UploadServer.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/autoload/server.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/autoload/server.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/runtime/container/scan.cache" beforeDir="false" afterPath="$PROJECT_DIR$/runtime/container/scan.cache" afterDir="false" />
@@ -205,7 +208,7 @@
       <workItem from="1684479583669" duration="9911000" />
       <workItem from="1684505543492" duration="2031000" />
       <workItem from="1684546879619" duration="4349000" />
-      <workItem from="1684715469777" duration="12524000" />
+      <workItem from="1684715469777" duration="15694000" />
     </task>
     <task id="LOCAL-00001" summary="未能遵守PSR-4自动加载标准">
       <created>1684481589369</created>
@@ -284,7 +287,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684734263792</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="上传图片成功">
+      <created>1684735009701</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1684735009701</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

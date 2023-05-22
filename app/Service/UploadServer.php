@@ -28,28 +28,38 @@ class UploadServer
      */
     public function uploadImage($data)
     {
-        // 获取客户端提交的图片文件
-        $file = $this->request->file($data['name']);
+        try {
+            // 获取客户端提交的图片文件
+            $file = $this->request->file($data['name']);
 
-        // 验证图片格式和大小是否符合要求
-        $validator = $this->validatorFactory->make([
-            'image' => $file,
-        ], [
-            'image' => 'required|image|mimes:jpg,jpeg,png,gif|max:'.$data['size'], // 限制图片大小为 2MB，类型为 JPEG、PNG 或 GIF
-        ]);
+            // 验证图片格式和大小是否符合要求
+            $validator = $this->validatorFactory->make([
+                'image' => $file,
+            ], [
+                'image' => 'required|image|mimes:jpg,jpeg,png,gif|max:'.$data['size'], // 限制图片大小为 2MB，类型为 JPEG、PNG 或 GIF
+            ]);
 
-        if ($validator->fails()) {
+            if ($validator->fails()) {
+                return [
+                    'code' => 400,
+                    'message' => '文件上传失败，请重试',
+                ];
+            }
+            // 保存图片到本地存储
+            // 生成唯一的文件名
+            $filename = $this->getFilename($file);
+            // 将上传文件移动到指定路径
+            $file->moveTo( BASE_PATH . '/public/images/' . $filename);
             return [
-                'code' => 400,
-                'message' => $validator->errors()->first(),
+                'code'=>200,
+                'url'=>'/public/images/'.$filename
+            ];
+        }catch (\Exception $exception){
+            return [
+                'code'=>400,
+                'message' => '文件上传失败，请重试',
             ];
         }
-        // 保存图片到本地存储
-        // 生成唯一的文件名
-        $filename = $this->getFilename($file);
-        // 将上传文件移动到指定路径
-        $file->moveTo( BASE_PATH . '/public/images/' . $filename);
-        return '/public/images/'.$filename;
     }
 
     //生成唯一的文件名

@@ -26,6 +26,7 @@ return [
                 Event::ON_REQUEST => [Hyperf\HttpServer\Server::class, 'onRequest'],
             ],
             'settings' => [
+                'package_max_length' => 1024 * 1024 * 100, // 上传文件大小设置为 100 MB
                 'enable_static_handler' => true, // 开启静态文件处理
                 'document_root' => BASE_PATH . '/public', // 静态文件根目录
             ],
