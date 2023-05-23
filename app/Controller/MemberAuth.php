@@ -60,6 +60,12 @@ class MemberAuth extends AbstractController
         }
     }
 
+    /**
+     * User: wujiawei
+     * DateTime: 2023/5/23 11:14
+     * describe: 手持身份证验证
+     * @return array|int[]|\Psr\Http\Message\ResponseInterface|string[]
+     */
     #[PostMapping(path: "holdidcard")]
     public function holdidcard(){
         // 获取所有参数和文件
@@ -94,6 +100,38 @@ class MemberAuth extends AbstractController
             ];
         }
     }
+
+    /**
+     * User: wujiawei
+     * DateTime: 2023/5/23 11:33
+     * describe: 特殊认证接口
+     * @return array|\Psr\Http\Message\ResponseInterface
+     */
+    #[PostMapping(path: "special")]
+    public function special(){
+        // 获取所有参数和文件
+        $params = $this->request->all();
+        if ($this->request->hasFile('special')) {
+            //size name 上传到oss的文件路径
+            $imgReturn = $this->uploadServer->uploadImage(['size'=>'4096','name'=>'special','ossurl'=>'Upload/V3/special/'.date('Y-m-d',time())]);
+            switch ($imgReturn['code']){
+                case 200:
+                    //设置返回地址
+                    $result['specialurl']=$imgReturn['url'];
+                    @unlink(BASE_PATH . $imgReturn['localurl']);
+                    return $result;
+                case 400:
+                    //图片上传失败
+                    return $this->response->json($imgReturn);
+            }
+        }else{
+            return [
+                'code'=>400,
+                'message' => '请上传图片',
+            ];
+        }
+    }
+
 
     /**
      * User: wujiawei
