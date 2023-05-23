@@ -3,7 +3,7 @@
  * orc识别类
  */
 namespace App\Service;
-
+use function Hyperf\Support\env;
 use App\Utils\AiSdk\AipOcr;//引入ocr识别类
 use Hyperf\HttpServer\Contract\ResponseInterface;//输出ResponseInterface
 
@@ -14,7 +14,7 @@ class TextRecognitionService
     public function __construct(ResponseInterface $response)
     {
         $this->response=$response;
-        $this->ocr = new AipOcr('17606770','mGqwCQCBfdweGbQTILshOz2r','cffxPsfr9RmD5vi2FHMI8hBmLmoxcZT5');
+        $this->ocr = new AipOcr(env('BAIDU_AIP_APP_ID','17606770'),env('BAIDU_AIP_API_KEY','mGqwCQCBfdweGbQTILshOz2r'),env('BAIDU_AIP_SECRET_KEY','cffxPsfr9RmD5vi2FHMI8hBmLmoxcZT5'));
     }
     /**
      * User: wujiawei

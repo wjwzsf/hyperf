@@ -11,3 +11,5 @@
 [2023-05-22 01:35:05] sql.INFO: [133.6] insert into `ly_order_test` (`orderCode`, `status`, `updated_at`, `created_at`) values ('1684719305', '1', '2023-05-22 01:35:05', '2023-05-22 01:35:05') [] []
 [2023-05-22 07:50:19] sql.INFO: [517.8] select count(*) as aggregate from `ly_person_info` where `idcard` = '130129199512191014' [] []
 [2023-05-22 07:52:55] sql.INFO: [279.14] select count(*) as aggregate from `ly_person_info` where `idcard` = '130129199512191014' [] []
+[2023-05-23 01:54:01] sql.INFO: [217.56] insert into `ly_order_test` (`orderCode`, `status`, `updated_at`, `created_at`) values ('1684806838', '1', '2023-05-23 01:54:01', '2023-05-23 01:54:01') [] []
+[2023-05-23 02:18:55] sql.INFO: [136.56] insert into `ly_order_test` (`orderCode`, `status`, `updated_at`, `created_at`) values ('1684808335', '1', '2023-05-23 02:18:55', '2023-05-23 02:18:55') [] []
