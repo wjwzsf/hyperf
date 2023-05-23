@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="35965e68-5e65-409f-bc21-635c2a6c9c24" name="默认变更列表" comment="修改ocr识别">
+    <list default="true" id="35965e68-5e65-409f-bc21-635c2a6c9c24" name="默认变更列表" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Controller/MemberAuth.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Controller/MemberAuth.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Dao/MemberAuth.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Dao/MemberAuth.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/container/classes.cache" beforeDir="false" afterPath="$PROJECT_DIR$/runtime/container/classes.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/runtime/container/scan.cache" beforeDir="false" afterPath="$PROJECT_DIR$/runtime/container/scan.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/runtime/hyperf.pid" beforeDir="false" afterPath="$PROJECT_DIR$/runtime/hyperf.pid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/logs/hyperf.log" beforeDir="false" afterPath="$PROJECT_DIR$/runtime/logs/hyperf.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -173,12 +176,13 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../gitwork/lgbv3" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.tools" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -205,7 +209,7 @@
       <workItem from="1684505543492" duration="2031000" />
       <workItem from="1684546879619" duration="4349000" />
       <workItem from="1684715469777" duration="28339000" />
-      <workItem from="1684808067067" duration="4288000" />
+      <workItem from="1684808067067" duration="13438000" />
     </task>
     <task id="LOCAL-00001" summary="未能遵守PSR-4自动加载标准">
       <created>1684481589369</created>
@@ -333,7 +337,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684810304587</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="特殊认证上传接口">
+      <created>1684813085486</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1684813085486</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -354,6 +365,11 @@
     <MESSAGE value="个人用户身份证识别功能完善" />
     <MESSAGE value="银行卡简单识别" />
     <MESSAGE value="修改ocr识别" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改ocr识别" />
+    <MESSAGE value="特殊认证上传接口" />
+    <option name="LAST_COMMIT_MESSAGE" value="特殊认证上传接口" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

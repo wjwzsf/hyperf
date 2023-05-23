@@ -174,4 +174,19 @@ class MemberAuth extends AbstractController
         }
     }
 
+    /**
+     * User: wujiawei
+     * DateTime: 2023/5/23 13:58
+     * describe: 实名认证审核
+     */
+    #[PostMapping(path: "examine")]
+    public function examine(){
+        // 获取所有参数和文件
+        $params = $this->request->all();
+        //检测手持
+        $memberAuth = new \App\Dao\MemberAuth();
+        $result = $memberAuth->examine($params);
+        return $result;
+    }
+
 }
