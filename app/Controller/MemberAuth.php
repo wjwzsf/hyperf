@@ -183,10 +183,10 @@ class MemberAuth extends AbstractController
     public function examine(){
         // 获取所有参数和文件
         $params = $this->request->all();
-        //检测手持
+        //调用Dao层处理数据
         $memberAuth = new \App\Dao\MemberAuth();
         $result = $memberAuth->examine($params);
-        return $result;
+        return $this->response->json($result);
     }
 
 }

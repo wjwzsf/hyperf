@@ -59,7 +59,7 @@ class Member extends Model
     /**
      * The table associated with the model.
      */
-    protected ?string $table = 'Member';
+    protected ?string $table = 'member';
 
     /**
      * The attributes that are mass assignable.

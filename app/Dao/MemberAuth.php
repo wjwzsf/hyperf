@@ -4,10 +4,19 @@
 namespace App\Dao;
 
 
+use App\Model\Member;
+use App\Service\HttpRequestService;
+use Hyperf\Context\ApplicationContext;
 use Hyperf\DbConnection\Db;
+use Hyperf\Di\Annotation\Inject;
 
 class MemberAuth
 {
+    //依赖注入http请求类
+    #[Inject]
+    private HttpRequestService $httpRequestService;
+
+
     /**
      * User: wujiawei
      * DateTime: 2023/5/22 15:08
@@ -54,19 +63,10 @@ class MemberAuth
                 }
             case 'back':
                 if (isset($checkData['words_result']['失效日期'])) {
-                    $lapseDate = $checkData['words_result']['失效日期']['words'];
-                    $notday=date('Ymd',time());
-                    if($notday>$lapseDate){
-                        return [
-                            'code'=>'400',
-                            'message'=>'身份已过有效期，请重新上传'
-                        ];
-                    }else{
-                        return [
-                            'code'=>200,
-                            'lapsedate'=>$checkData['words_result']['失效日期']['words'],
-                        ];
-                    }
+                    return [
+                        'code'=>200,
+                        'lapsedate'=>$checkData['words_result']['失效日期']['words'],
+                    ];
                 }else{
                     return [
                         'code'=>'400',
@@ -110,6 +110,14 @@ class MemberAuth
      * @param $data
      */
     public function examine($data){
+        $lapseDate = $data['lapsedate'];
+        $notday=date('Ymd',time());
+        if($notday>$lapseDate){
+            return [
+                'code'=>'401',
+                'message'=>'身份证不在有效期内'
+            ];
+        }
         $jdidcard = Db::table('person_info')
             ->where('idcard', $data['idcard'])
             ->value('id');
@@ -142,9 +150,36 @@ class MemberAuth
                 ->update($personinfo_save);
             //修改用户表状态
             Db::table('member')->where('id', $data['member_id'])->update(['person_status' => '1']);
+            //特殊认证
+            if($data['deformity'] || $data['military']){
+                $specialData = [
+                    'deformity'=>$data['deformity'] ? : '',
+                    'military'=>$data['military'] ? : '',
+                    'member_id'=>$data['member_id'],
+                    'created_at'=>date('Y-m-d H:i:s',time())
+                ];
+                Db::table('special_cert')->insert($specialData);
+            }
             Db::commit();
+            //java修改群组相关信息
+//          TODO::  $url = 'http://47.105.68.245:8088/v3/lyGroupMember/updateUser/'.$data['member_id'];
+            $url = 'http://www.baidu.com';
+            $this->httpRequestService->httpRequest($url,'GET');
+            #推送消息到redis 用于生成头像
+            $redis = ApplicationContext::getContainer()->get(\Hyperf\Redis\Redis::class);
+            $redisData = [
+                'member_id'=>$data['member_id'],
+                'name'=>$data['realname']
+            ];
+            $redis->lPush('lgb:person:head',json_encode($redisData));
+            //返回个人信息
+            $memberReturn = Db::table('member')
+                            ->select('person_status', 'person_tongyi')
+                            ->where('id', $data['member_id'])
+                            ->get();
             return [
-              'code'=>200
+                'code'=>200,
+                'info'=>$memberReturn ? : null
             ];
         } catch (\Throwable $e) {
             Db::rollBack();
