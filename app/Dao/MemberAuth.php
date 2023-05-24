@@ -34,20 +34,20 @@ class MemberAuth
                     $duplicates = Db::table('person_info')->where('idcard',$idcard)->count();
                     if($duplicates>0){
                         return [
-                            'code'=>'400',
+                            'code'=>400,
                             'message'=>'此身份证已在平台认证'
                         ];
                     }else{
                         $idcardAge = $this->howOld($idcard);
                         if ($idcardAge < 16){
                             return [
-                                'code' => '400',
+                                'code' => 400,
                                 'message' => '未年满16周岁,不可注册'
                             ];
                         }
                         if ($idcardAge > 80){
                             return [
-                                'code' => '400',
+                                'code' => 400,
                                 'message' => '已超出80周岁,不可注册'
                             ];
                         }
@@ -59,7 +59,7 @@ class MemberAuth
                     }
                 }else{
                     return [
-                      'code'=>'400',
+                      'code'=>400,
                       'message'=>'识别失败，请上传正确的身份证照片'
                     ];
                 }
@@ -71,7 +71,7 @@ class MemberAuth
                     ];
                 }else{
                     return [
-                        'code'=>'400',
+                        'code'=>400,
                         'message'=>'识别失败，请上传正确的身份证照片'
                     ];
                 }
@@ -93,13 +93,13 @@ class MemberAuth
                 ];
             }else{
                 return [
-                    'code'=>'400',
+                    'code'=>400,
                     'message'=>'识别失败，请上传清晰、正确的示例照片'
                 ];
             }
         }else{
             return [
-                'code'=>'400',
+                'code'=>400,
                 'message'=>'识别失败，请上传清晰、正确的示例照片'
             ];
         }
@@ -116,7 +116,7 @@ class MemberAuth
         $notday=date('Ymd',time());
         if($notday>$lapseDate){
             return [
-                'code'=>'401',
+                'code'=>401,
                 'message'=>'身份证不在有效期内'
             ];
         }
@@ -283,11 +283,11 @@ class MemberAuth
         }
         if($result){
             return [
-              'code'=>'200'
+              'code'=>200
             ];
         }else{
             return [
-                'code'=>'400',
+                'code'=>400,
                 'message'=>'上传失败'
             ];
         }
