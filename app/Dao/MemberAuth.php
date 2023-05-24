@@ -4,7 +4,9 @@
 namespace App\Dao;
 
 
-use App\Model\Member;
+use App\Model\CollectionTypeLog;
+use App\Model\PersonInfo;
+use App\Model\SpecialCert;
 use App\Service\HttpRequestService;
 use Hyperf\Context\ApplicationContext;
 use Hyperf\DbConnection\Db;
@@ -153,8 +155,8 @@ class MemberAuth
             //特殊认证
             if($data['deformity'] || $data['military']){
                 $specialData = [
-                    'deformity'=>$data['deformity'] ? : '',
-                    'military'=>$data['military'] ? : '',
+                    'deformity'=>$data['deformity'] ? config('app.LGBFILE_URL').$data['deformity'] : '',
+                    'military'=>$data['military'] ? config('app.LGBFILE_URL').$data['military'] : '',
                     'member_id'=>$data['member_id'],
                     'created_at'=>date('Y-m-d H:i:s',time())
                 ];
@@ -208,5 +210,36 @@ class MemberAuth
         //strtotime加上这个年数后得到那日的时间戳后与今日的时间戳相比
         $age = strtotime(substr($idcard, 6, 8) . ' +' . $diff . 'years') > $today ? ($diff + 1) : $diff;
         return $age;
+    }
+
+    /**
+     * User: wujiawei
+     * DateTime: 2023/5/24 9:02
+     * describe:已认证人员，信息获取
+     */
+    public function getAttestation($member_id){
+        $result = [];
+        //姓名身份证
+        $person_info = PersonInfo::where('member_id', $member_id)->select('idcard', 'real_name')->first()->toArray();
+        //是否选择收款方式
+        $collection_type_num = CollectionTypeLog::query()->where('member_id', $member_id)->count('*');
+        //特殊认证
+        $special_cert = SpecialCert::query()->where('member_id', $member_id)->select('deformity','military')->first()->toArray();
+
+        //处理数据
+        $result['collection_type'] = ($collection_type_num > 0) ? 1 : 0;
+        $result['special_cert'] = $special_cert;
+
+        //姓名隐藏
+        $result['realname'] = $this->substr_cut($person_info['real_name']);
+        //银行卡隐藏
+        $result['idcard'] = substr($person_info['idcard'], 0, 1) . str_repeat('*', strlen($person_info['idcard']) - 2) . substr($person_info['idcard'], -1);
+        return $result;
+    }
+    private function substr_cut($user_name){
+        $strlen     = mb_strlen($user_name, 'utf-8'); //获取字符长度
+        $firstStr     = mb_substr($user_name,-1, 1, 'utf-8');  //查找最后一个
+        $str= str_repeat('*', $strlen - 1).$firstStr;  //拼接最后一个+把字符串 "* " 重复 $strlen - 1 次：
+        return $str;
     }
 }

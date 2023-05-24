@@ -7,10 +7,10 @@ namespace App\Controller;
 use App\Service\TextRecognitionService;
 use App\Service\UploadServer;
 use Hyperf\Di\Annotation\Inject;
+use Hyperf\HttpMessage\Upload\Input;
 use Hyperf\HttpServer\Annotation\Controller;
 use Hyperf\HttpServer\Annotation\GetMapping;
 use Hyperf\HttpServer\Annotation\PostMapping;
-use Hyperf\HttpMessage\Upload\Input;
 
 #[Controller(prefix: "memberAuth")]
 class MemberAuth extends AbstractController
@@ -198,9 +198,10 @@ class MemberAuth extends AbstractController
     #[GetMapping(path: "attshow")]
     public function attestationShow(){
         //获取参数
-//        $member_id = $this->request->input('member_id',null);
-//        //调用Dao层处理数据
-//        $memberAuth = new \App\Dao\MemberAuth();
-//        $memberAuth->getAttestation();
+        $member_id = $this->request->input('member_id',null);
+        //调用Dao层处理数据
+        $memberAuth = new \App\Dao\MemberAuth();
+        $result = $memberAuth->getAttestation($member_id);
+        return $result;
     }
 }
