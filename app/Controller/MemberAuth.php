@@ -153,6 +153,7 @@ class MemberAuth extends AbstractController
                         'localurl'=>$imgReturn['localurl']
                     ];
                     $checkData = $this->recognitionService->bankcard($data);
+                    @unlink(BASE_PATH . $imgReturn['localurl']);
                     return $checkData;
 //                    //检测银行卡
 //                    $memberAuth = new \App\Dao\MemberAuth();
