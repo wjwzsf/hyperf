@@ -1,11 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="35965e68-5e65-409f-bc21-635c2a6c9c24" name="默认变更列表" comment="个人实名认证审核提交，后续操作执行完成">
+    <list default="true" id="35965e68-5e65-409f-bc21-635c2a6c9c24" name="默认变更列表" comment="修改code值为int类型">
+      <change afterPath="$PROJECT_DIR$/.watcher.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/646b405600f1f.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/646b44f1dbc8e.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/646c27600742e.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/646c2809703da.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/646c28235524b.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/646c28dd01578.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/646c290aa4fe6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/646c2963947fb.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/646c2b48e686e.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/646db3721644c.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/hyperf.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/hyperf.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Dao/MemberAuth.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Dao/MemberAuth.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/runtime/container/scan.cache" beforeDir="false" afterPath="$PROJECT_DIR$/runtime/container/scan.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/runtime/hyperf.pid" beforeDir="false" afterPath="$PROJECT_DIR$/runtime/hyperf.pid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/logs/hyperf.log" beforeDir="false" afterPath="$PROJECT_DIR$/runtime/logs/hyperf.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_files.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_files.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/installed.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/installed.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/installed.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/installed.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -169,6 +190,7 @@
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-idn" />
       <path value="$PROJECT_DIR$/vendor/hyperf/translation" />
       <path value="$PROJECT_DIR$/vendor/hyperf/validation" />
+      <path value="$PROJECT_DIR$/vendor/hyperf/watcher" />
     </include_path>
   </component>
   <component name="ProjectId" id="2PzVDgKrmddVRPm6jYR07BRsb92" />
@@ -406,7 +428,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684913019014</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="修改code值为int类型">
+      <created>1684917676927</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1684917676927</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -434,7 +463,8 @@
     <MESSAGE value="实名后展示信息" />
     <MESSAGE value="已认证人员，信息展示接口完成" />
     <MESSAGE value="单独上传特殊认证完成" />
-    <option name="LAST_COMMIT_MESSAGE" value="单独上传特殊认证完成" />
+    <MESSAGE value="修改code值为int类型" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改code值为int类型" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

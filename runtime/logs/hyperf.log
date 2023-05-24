@@ -244,3 +244,6 @@
 [2023-05-24 07:18:55] sql.INFO: [342.19] select `id` from `ly_special_cert` where `member_id` = '7293' limit 1 [] []
 [2023-05-24 07:18:55] sql.INFO: [49.3] select * from `ly_special_cert` where `ly_special_cert`.`id` = '2' limit 1 [] []
 [2023-05-24 07:18:55] sql.INFO: [41.52] update `ly_special_cert` set `deformity` = 'http://lhygtest.linggongbang.cn//public/images/646dba5e85589.png', `ly_special_cert`.`updated_at` = '2023-05-24 07:18:55' where `id` = '2' [] []
+[2023-05-24 08:28:41] sql.INFO: [3269.92] select `idcard`, `real_name` from `ly_person_info` where `member_id` = '7293' limit 1 [] []
+[2023-05-24 08:28:41] sql.INFO: [35.99] select count(*) as aggregate from `ly_collection_type_log` where `member_id` = '7293' [] []
+[2023-05-24 08:28:41] sql.INFO: [41.82] select `deformity`, `military` from `ly_special_cert` where `member_id` = '7293' limit 1 [] []

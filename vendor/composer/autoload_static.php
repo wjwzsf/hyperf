@@ -34,6 +34,7 @@ class ComposerStaticInit6b06af777e53914ad5800e7378b6c70c
         'ec07570ca5a812141189b1fa81503674' => __DIR__ . '/..' . '/phpunit/phpunit/src/Framework/Assert/Functions.php',
         '23c18046f52bef3eea034657bafda50f' => __DIR__ . '/..' . '/symfony/polyfill-php81/bootstrap.php',
         'fdea4480df6c5882835d3b60a113de4d' => __DIR__ . '/..' . '/hyperf/config/src/Functions.php',
+        'ae66016dcf8c35ea526fcf705881b4ed' => __DIR__ . '/..' . '/hyperf/watcher/src/Functions.php',
         '9b38cf48e83f5d8f60375221cd213eee' => __DIR__ . '/..' . '/phpstan/phpstan/bootstrap.php',
     );
 
@@ -94,6 +95,7 @@ class ComposerStaticInit6b06af777e53914ad5800e7378b6c70c
         ),
         'H' => 
         array (
+            'Hyperf\\Watcher\\' => 15,
             'Hyperf\\Validation\\' => 18,
             'Hyperf\\Utils\\' => 13,
             'Hyperf\\Translation\\' => 19,
@@ -336,6 +338,10 @@ class ComposerStaticInit6b06af777e53914ad5800e7378b6c70c
         'Laminas\\Mime\\' => 
         array (
             0 => __DIR__ . '/..' . '/laminas/laminas-mime/src',
+        ),
+        'Hyperf\\Watcher\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/hyperf/watcher/src',
         ),
         'Hyperf\\Validation\\' => 
         array (
@@ -2067,6 +2073,19 @@ class ComposerStaticInit6b06af777e53914ad5800e7378b6c70c
         'Hyperf\\Validation\\Validator' => __DIR__ . '/..' . '/hyperf/validation/src/Validator.php',
         'Hyperf\\Validation\\ValidatorFactory' => __DIR__ . '/..' . '/hyperf/validation/src/ValidatorFactory.php',
         'Hyperf\\Validation\\ValidatorFactoryFactory' => __DIR__ . '/..' . '/hyperf/validation/src/ValidatorFactoryFactory.php',
+        'Hyperf\\Watcher\\Ast\\Metadata' => __DIR__ . '/..' . '/hyperf/watcher/src/Ast/Metadata.php',
+        'Hyperf\\Watcher\\Ast\\RewriteClassNameVisitor' => __DIR__ . '/..' . '/hyperf/watcher/src/Ast/RewriteClassNameVisitor.php',
+        'Hyperf\\Watcher\\Command\\WatchCommand' => __DIR__ . '/..' . '/hyperf/watcher/src/Command/WatchCommand.php',
+        'Hyperf\\Watcher\\ConfigProvider' => __DIR__ . '/..' . '/hyperf/watcher/src/ConfigProvider.php',
+        'Hyperf\\Watcher\\Driver\\AbstractDriver' => __DIR__ . '/..' . '/hyperf/watcher/src/Driver/AbstractDriver.php',
+        'Hyperf\\Watcher\\Driver\\DriverInterface' => __DIR__ . '/..' . '/hyperf/watcher/src/Driver/DriverInterface.php',
+        'Hyperf\\Watcher\\Driver\\FindDriver' => __DIR__ . '/..' . '/hyperf/watcher/src/Driver/FindDriver.php',
+        'Hyperf\\Watcher\\Driver\\FindNewerDriver' => __DIR__ . '/..' . '/hyperf/watcher/src/Driver/FindNewerDriver.php',
+        'Hyperf\\Watcher\\Driver\\FswatchDriver' => __DIR__ . '/..' . '/hyperf/watcher/src/Driver/FswatchDriver.php',
+        'Hyperf\\Watcher\\Driver\\ScanFileDriver' => __DIR__ . '/..' . '/hyperf/watcher/src/Driver/ScanFileDriver.php',
+        'Hyperf\\Watcher\\Option' => __DIR__ . '/..' . '/hyperf/watcher/src/Option.php',
+        'Hyperf\\Watcher\\Process' => __DIR__ . '/..' . '/hyperf/watcher/src/Process.php',
+        'Hyperf\\Watcher\\Watcher' => __DIR__ . '/..' . '/hyperf/watcher/src/Watcher.php',
         'Laminas\\Mime\\Decode' => __DIR__ . '/..' . '/laminas/laminas-mime/src/Decode.php',
         'Laminas\\Mime\\Exception\\ExceptionInterface' => __DIR__ . '/..' . '/laminas/laminas-mime/src/Exception/ExceptionInterface.php',
         'Laminas\\Mime\\Exception\\InvalidArgumentException' => __DIR__ . '/..' . '/laminas/laminas-mime/src/Exception/InvalidArgumentException.php',

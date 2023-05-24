@@ -45,6 +45,7 @@ return array(
     'Monolog\\' => array($vendorDir . '/monolog/monolog/src/Monolog'),
     'Laminas\\Stdlib\\' => array($vendorDir . '/laminas/laminas-stdlib/src'),
     'Laminas\\Mime\\' => array($vendorDir . '/laminas/laminas-mime/src'),
+    'Hyperf\\Watcher\\' => array($vendorDir . '/hyperf/watcher/src'),
     'Hyperf\\Validation\\' => array($vendorDir . '/hyperf/validation/src'),
     'Hyperf\\Utils\\' => array($vendorDir . '/hyperf/utils/src'),
     'Hyperf\\Translation\\' => array($vendorDir . '/hyperf/translation/src'),

@@ -33,5 +33,6 @@ return array(
     'ec07570ca5a812141189b1fa81503674' => $vendorDir . '/phpunit/phpunit/src/Framework/Assert/Functions.php',
     '23c18046f52bef3eea034657bafda50f' => $vendorDir . '/symfony/polyfill-php81/bootstrap.php',
     'fdea4480df6c5882835d3b60a113de4d' => $vendorDir . '/hyperf/config/src/Functions.php',
+    'ae66016dcf8c35ea526fcf705881b4ed' => $vendorDir . '/hyperf/watcher/src/Functions.php',
     '9b38cf48e83f5d8f60375221cd213eee' => $vendorDir . '/phpstan/phpstan/bootstrap.php',
 );

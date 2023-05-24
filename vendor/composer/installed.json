@@ -3848,6 +3848,68 @@
             "install-path": "../hyperf/validation"
         },
         {
+            "name": "hyperf/watcher",
+            "version": "v3.0.17",
+            "version_normalized": "3.0.17.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/hyperf/watcher.git",
+                "reference": "349318a2ddfb05e6e8aeb2984ed0779bd39b75b1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/hyperf/watcher/zipball/349318a2ddfb05e6e8aeb2984ed0779bd39b75b1",
+                "reference": "349318a2ddfb05e6e8aeb2984ed0779bd39b75b1",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "ext-posix": "*",
+                "hyperf/command": "~3.0.0",
+                "hyperf/di": "~3.0.0",
+                "hyperf/framework": "~3.0.0",
+                "php": ">=8.0"
+            },
+            "time": "2023-04-13T03:56:00+00:00",
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.0-dev"
+                },
+                "hyperf": {
+                    "config": "Hyperf\\Watcher\\ConfigProvider"
+                }
+            },
+            "installation-source": "dist",
+            "autoload": {
+                "files": [
+                    "src/Functions.php"
+                ],
+                "psr-4": {
+                    "Hyperf\\Watcher\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Hot reload watcher for Hyperf",
+            "keywords": [
+                "hyperf",
+                "php"
+            ],
+            "support": {
+                "issues": "https://github.com/hyperf/watcher/issues",
+                "source": "https://github.com/hyperf/watcher/tree/v3.0.17"
+            },
+            "install-path": "../hyperf/watcher"
+        },
+        {
             "name": "laminas/laminas-mime",
             "version": "2.11.0",
             "version_normalized": "2.11.0.0",
