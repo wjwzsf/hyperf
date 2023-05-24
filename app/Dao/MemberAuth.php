@@ -236,10 +236,61 @@ class MemberAuth
         $result['idcard'] = substr($person_info->idcard, 0, 1) . str_repeat('*', strlen($person_info->idcard) - 2) . substr($person_info->idcard, -1);
         return $result;
     }
+
+    /**
+     * User: wujiawei
+     * DateTime: 2023/5/24 14:30
+     * describe:身份证姓名 保留最后一位
+     * @param $user_name
+     * @return string
+     */
     private function substr_cut($user_name){
         $strlen     = mb_strlen($user_name, 'utf-8'); //获取字符长度
         $firstStr     = mb_substr($user_name,-1, 1, 'utf-8');  //查找最后一个
         $str= str_repeat('*', $strlen - 1).$firstStr;  //拼接最后一个+把字符串 "* " 重复 $strlen - 1 次：
         return $str;
     }
+
+    /**
+     * User: wujiawei
+     * DateTime: 2023/5/24 15:22
+     * describe: 单独上传特殊认证
+     * @param $url
+     * @param $data
+     * @return string[]
+     */
+    public function upspecial($url,$data){
+        $jdid = Db::table('special_cert')
+                    ->where('member_id', $data['member_id'])
+                    ->value('id');
+        if($jdid){
+            $specialCert = SpecialCert::query()->find($jdid);
+            if($data['type']=='deformity'){
+                $specialCert->deformity = config('app.LGBFILE_URL').$url;
+            }else{
+                $specialCert->military = config('app.LGBFILE_URL').$url;
+            }
+            $result = $specialCert->save();
+        }else{
+            $specialCert = new SpecialCert();
+            if($data['type']=='deformity'){
+                $specialCert->deformity = config('app.LGBFILE_URL').$url;
+            }else{
+                $specialCert->military = config('app.LGBFILE_URL').$url;
+            }
+            $specialCert->member_id=$data['member_id'];
+            $result = $specialCert->save();
+        }
+        if($result){
+            return [
+              'code'=>'200'
+            ];
+        }else{
+            return [
+                'code'=>'400',
+                'message'=>'上传失败'
+            ];
+        }
+    }
+
 }

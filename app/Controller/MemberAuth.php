@@ -204,4 +204,43 @@ class MemberAuth extends AbstractController
         $result = $memberAuth->getAttestation($member_id);
         return $this->response->json($result);
     }
+
+    /**
+     * User: wujiawei
+     * DateTime: 2023/5/24 13:52
+     * describe:单独上传特殊认证
+     * @return array|\Psr\Http\Message\ResponseInterface
+     */
+    #[PostMapping(path: "upspecial")]
+    public function upspecial(){
+        // 获取所有参数和文件
+        $params = $this->request->all();
+        if(!$this->request->has('member_id')){
+            return [
+                'code'=>400,
+                'message' => '参数错误',
+            ];
+        }
+        if ($this->request->hasFile('special')) {
+            //size name 上传到oss的文件路径
+            $imgReturn = $this->uploadServer->uploadImage(['size'=>'4096','name'=>'special','ossurl'=>'Upload/V3/special/'.date('Y-m-d',time())]);
+            switch ($imgReturn['code']){
+                case 200:
+                    //修改调用
+                    $memberAuth = new \App\Dao\MemberAuth();
+                    $result = $memberAuth->upspecial($imgReturn['url'],$params);
+                    @unlink(BASE_PATH . $imgReturn['localurl']);
+                    return $result;
+                case 400:
+                    //图片上传失败
+                    return $this->response->json($imgReturn);
+            }
+        }else{
+            return [
+                'code'=>400,
+                'message' => '请上传图片',
+            ];
+        }
+    }
+
 }

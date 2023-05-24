@@ -3,7 +3,7 @@
         'name' => 'hyperf/hyperf-skeleton',
         'pretty_version' => 'dev-master',
         'version' => 'dev-master',
-        'reference' => 'f97165ce5788c0df0747818f440eb3c35eab8d16',
+        'reference' => 'dde8c68ae546c1b29ad201f7d4a5035bcca9f8af',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -394,7 +394,7 @@
         'hyperf/hyperf-skeleton' => array(
             'pretty_version' => 'dev-master',
             'version' => 'dev-master',
-            'reference' => 'f97165ce5788c0df0747818f440eb3c35eab8d16',
+            'reference' => 'dde8c68ae546c1b29ad201f7d4a5035bcca9f8af',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
