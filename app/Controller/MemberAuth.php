@@ -8,6 +8,7 @@ use App\Service\TextRecognitionService;
 use App\Service\UploadServer;
 use Hyperf\Di\Annotation\Inject;
 use Hyperf\HttpServer\Annotation\Controller;
+use Hyperf\HttpServer\Annotation\GetMapping;
 use Hyperf\HttpServer\Annotation\PostMapping;
 use Hyperf\HttpMessage\Upload\Input;
 
@@ -189,4 +190,17 @@ class MemberAuth extends AbstractController
         return $this->response->json($result);
     }
 
+    /**
+     * User: wujiawei
+     * DateTime: 2023/5/24 8:37
+     * describe: 已认证人员，信息展示
+     */
+    #[GetMapping(path: "attshow")]
+    public function attestationShow(){
+        //获取参数
+//        $member_id = $this->request->input('member_id',null);
+//        //调用Dao层处理数据
+//        $memberAuth = new \App\Dao\MemberAuth();
+//        $memberAuth->getAttestation();
+    }
 }

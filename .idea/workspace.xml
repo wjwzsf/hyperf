@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="35965e68-5e65-409f-bc21-635c2a6c9c24" name="默认变更列表" comment="">
+    <list default="true" id="35965e68-5e65-409f-bc21-635c2a6c9c24" name="默认变更列表" comment="个人实名认证审核提交，后续操作执行完成">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Amqp/Consumer/DelayDirectConsumer.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Amqp/Consumer/DelayDirectConsumer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Amqp/Producer/DelayDirectProducer.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Amqp/Producer/DelayDirectProducer.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Controller/MemberAuth.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Controller/MemberAuth.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Dao/MemberAuth.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Dao/MemberAuth.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Model/Member.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Model/Member.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Controller/OrderTestController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Controller/OrderTestController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/runtime/container/classes.cache" beforeDir="false" afterPath="$PROJECT_DIR$/runtime/container/classes.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/runtime/container/scan.cache" beforeDir="false" afterPath="$PROJECT_DIR$/runtime/container/scan.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/runtime/hyperf.pid" beforeDir="false" afterPath="$PROJECT_DIR$/runtime/hyperf.pid" afterDir="false" />
@@ -215,7 +216,8 @@
       <workItem from="1684505543492" duration="2031000" />
       <workItem from="1684546879619" duration="4349000" />
       <workItem from="1684715469777" duration="28339000" />
-      <workItem from="1684808067067" duration="19916000" />
+      <workItem from="1684808067067" duration="20754000" />
+      <workItem from="1684887852533" duration="1507000" />
     </task>
     <task id="LOCAL-00001" summary="未能遵守PSR-4自动加载标准">
       <created>1684481589369</created>
@@ -357,7 +359,28 @@
       <option name="project" value="LOCAL" />
       <updated>1684828952278</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="个人实名认证审核提交，后续操作执行完成">
+      <created>1684835440909</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1684835440909</updated>
+    </task>
+    <task id="LOCAL-00022" summary="个人实名认证审核提交，后续操作执行完成">
+      <created>1684835519043</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1684835519043</updated>
+    </task>
+    <task id="LOCAL-00023" summary="个人实名认证审核提交，后续操作执行完成">
+      <created>1684835563536</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1684835563536</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -380,7 +403,8 @@
     <MESSAGE value="修改ocr识别" />
     <MESSAGE value="特殊认证上传接口" />
     <MESSAGE value="个人实名认证审核提交成功" />
-    <option name="LAST_COMMIT_MESSAGE" value="个人实名认证审核提交成功" />
+    <MESSAGE value="个人实名认证审核提交，后续操作执行完成" />
+    <option name="LAST_COMMIT_MESSAGE" value="个人实名认证审核提交，后续操作执行完成" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

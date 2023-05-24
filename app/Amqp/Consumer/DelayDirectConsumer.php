@@ -14,15 +14,14 @@ use PhpAmqpLib\Message\AMQPMessage;
 use App\Model\HyOrder;
 use Hyperf\Amqp\Message\Type;
 
-/**
- * @Consumer( nums=1)
- */
+
+#[Consumer(exchange: 'ext.hyperf.delay', routingKey: '', queue: 'queue.hyperf.delay', nums: 1)]
 class DelayDirectConsumer extends ConsumerMessage
 {
     use ProducerDelayedMessageTrait;
     use ConsumerDelayedMessageTrait;
-    protected string $exchange = 'my_exchange';
-    protected ?string $queue = 'my_queue';
+    protected string $exchange = 'ext.hyperf.delay';
+    protected ?string $queue = 'queue.hyperf.delay';
     protected string $type = Type::DIRECT; //Type::FANOUT;
     protected string|array $routingKey = '';
     public function consumeMessage($data, AMQPMessage $message): string
