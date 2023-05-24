@@ -202,6 +202,6 @@ class MemberAuth extends AbstractController
         //调用Dao层处理数据
         $memberAuth = new \App\Dao\MemberAuth();
         $result = $memberAuth->getAttestation($member_id);
-        return $result;
+        return $this->response->json($result);
     }
 }

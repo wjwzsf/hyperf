@@ -220,20 +220,20 @@ class MemberAuth
     public function getAttestation($member_id){
         $result = [];
         //姓名身份证
-        $person_info = PersonInfo::where('member_id', $member_id)->select('idcard', 'real_name')->first()->toArray();
+        $person_info = Db::table('person_info')->where('member_id', $member_id)->select('idcard', 'real_name')->first();
         //是否选择收款方式
         $collection_type_num = CollectionTypeLog::query()->where('member_id', $member_id)->count('*');
         //特殊认证
-        $special_cert = SpecialCert::query()->where('member_id', $member_id)->select('deformity','military')->first()->toArray();
+        $special_cert = Db::table('special_cert')->where('member_id', $member_id)->select('deformity','military')->first();
 
         //处理数据
         $result['collection_type'] = ($collection_type_num > 0) ? 1 : 0;
-        $result['special_cert'] = $special_cert;
+        $result['special_cert'] = (array)$special_cert;
 
         //姓名隐藏
-        $result['realname'] = $this->substr_cut($person_info['real_name']);
+        $result['realname'] = $this->substr_cut($person_info->real_name);
         //银行卡隐藏
-        $result['idcard'] = substr($person_info['idcard'], 0, 1) . str_repeat('*', strlen($person_info['idcard']) - 2) . substr($person_info['idcard'], -1);
+        $result['idcard'] = substr($person_info->idcard, 0, 1) . str_repeat('*', strlen($person_info->idcard) - 2) . substr($person_info->idcard, -1);
         return $result;
     }
     private function substr_cut($user_name){
