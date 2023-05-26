@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="35965e68-5e65-409f-bc21-635c2a6c9c24" name="默认变更列表" comment="修改code值为int类型">
-      <change beforePath="$PROJECT_DIR$/app/Controller/BookController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Dao/BookDao.php" beforeDir="false" />
+    <list default="true" id="35965e68-5e65-409f-bc21-635c2a6c9c24" name="默认变更列表" comment="delete demo">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/container/classes.cache" beforeDir="false" afterPath="$PROJECT_DIR$/runtime/container/classes.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/container/scan.cache" beforeDir="false" afterPath="$PROJECT_DIR$/runtime/container/scan.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/hyperf.pid" beforeDir="false" afterPath="$PROJECT_DIR$/runtime/hyperf.pid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/logs/hyperf.log" beforeDir="false" afterPath="$PROJECT_DIR$/runtime/logs/hyperf.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -215,6 +220,7 @@
       <workItem from="1684715469777" duration="28339000" />
       <workItem from="1684808067067" duration="20754000" />
       <workItem from="1684887852533" duration="18428000" />
+      <workItem from="1685060526641" duration="6410000" />
     </task>
     <task id="LOCAL-00001" summary="未能遵守PSR-4自动加载标准">
       <created>1684481589369</created>
