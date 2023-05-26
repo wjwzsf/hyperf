@@ -4,13 +4,8 @@
 *.patch
 .idea/
 .git/
-runtime/
-
 .phpintel/
-.env
 .DS_Store
+*.lock
 .phpunit*
-*.cache
-.vscode/
-/app/Amqp/
-
+vendor
