@@ -149,6 +149,7 @@ class ComposerStaticInit6b06af777e53914ad5800e7378b6c70c
         ),
         'F' => 
         array (
+            'Firebase\\JWT\\' => 13,
             'Fig\\Http\\Message\\' => 17,
             'FastRoute\\' => 10,
         ),
@@ -531,6 +532,10 @@ class ComposerStaticInit6b06af777e53914ad5800e7378b6c70c
         array (
             0 => __DIR__ . '/..' . '/graham-campbell/result-type/src',
         ),
+        'Firebase\\JWT\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/firebase/php-jwt/src',
+        ),
         'Fig\\Http\\Message\\' => 
         array (
             0 => __DIR__ . '/..' . '/fig/http-message-util/src',
@@ -615,10 +620,12 @@ class ComposerStaticInit6b06af777e53914ad5800e7378b6c70c
         'App\\Controller\\IndexController' => __DIR__ . '/../..' . '/app/Controller/IndexController.php',
         'App\\Controller\\MemberAuth' => __DIR__ . '/../..' . '/app/Controller/MemberAuth.php',
         'App\\Controller\\OrderTestController' => __DIR__ . '/../..' . '/app/Controller/OrderTestController.php',
+        'App\\Controller\\UserController' => __DIR__ . '/../..' . '/app/Controller/UserController.php',
         'App\\Dao\\MemberAuth' => __DIR__ . '/../..' . '/app/Dao/MemberAuth.php',
         'App\\Exception\\Handler\\AppExceptionHandler' => __DIR__ . '/../..' . '/app/Exception/Handler/AppExceptionHandler.php',
         'App\\Listener\\DbQueryExecutedListener' => __DIR__ . '/../..' . '/app/Listener/DbQueryExecutedListener.php',
         'App\\Listener\\ResumeExitCoordinatorListener' => __DIR__ . '/../..' . '/app/Listener/ResumeExitCoordinatorListener.php',
+        'App\\Middleware\\JwtMiddleware' => __DIR__ . '/../..' . '/app/Middleware/JwtMiddleware.php',
         'App\\Model\\CollectionTypeLog' => __DIR__ . '/../..' . '/app/Model/CollectionTypeLog.php',
         'App\\Model\\Img' => __DIR__ . '/../..' . '/app/Model/Img.php',
         'App\\Model\\Member' => __DIR__ . '/../..' . '/app/Model/Member.php',
@@ -987,6 +994,13 @@ class ComposerStaticInit6b06af777e53914ad5800e7378b6c70c
         'FastRoute\\RouteParser\\Std' => __DIR__ . '/..' . '/nikic/fast-route/src/RouteParser/Std.php',
         'Fig\\Http\\Message\\RequestMethodInterface' => __DIR__ . '/..' . '/fig/http-message-util/src/RequestMethodInterface.php',
         'Fig\\Http\\Message\\StatusCodeInterface' => __DIR__ . '/..' . '/fig/http-message-util/src/StatusCodeInterface.php',
+        'Firebase\\JWT\\BeforeValidException' => __DIR__ . '/..' . '/firebase/php-jwt/src/BeforeValidException.php',
+        'Firebase\\JWT\\CachedKeySet' => __DIR__ . '/..' . '/firebase/php-jwt/src/CachedKeySet.php',
+        'Firebase\\JWT\\ExpiredException' => __DIR__ . '/..' . '/firebase/php-jwt/src/ExpiredException.php',
+        'Firebase\\JWT\\JWK' => __DIR__ . '/..' . '/firebase/php-jwt/src/JWK.php',
+        'Firebase\\JWT\\JWT' => __DIR__ . '/..' . '/firebase/php-jwt/src/JWT.php',
+        'Firebase\\JWT\\Key' => __DIR__ . '/..' . '/firebase/php-jwt/src/Key.php',
+        'Firebase\\JWT\\SignatureInvalidException' => __DIR__ . '/..' . '/firebase/php-jwt/src/SignatureInvalidException.php',
         'GrahamCampbell\\ResultType\\Error' => __DIR__ . '/..' . '/graham-campbell/result-type/src/Error.php',
         'GrahamCampbell\\ResultType\\Result' => __DIR__ . '/..' . '/graham-campbell/result-type/src/Result.php',
         'GrahamCampbell\\ResultType\\Success' => __DIR__ . '/..' . '/graham-campbell/result-type/src/Success.php',

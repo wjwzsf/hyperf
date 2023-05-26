@@ -1,11 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="35965e68-5e65-409f-bc21-635c2a6c9c24" name="默认变更列表" comment="delete demo">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="35965e68-5e65-409f-bc21-635c2a6c9c24" name="默认变更列表" comment="vendor也更新到git">
+      <change afterPath="$PROJECT_DIR$/app/Controller/UserController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Middleware/JwtMiddleware.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/autoload/jwt.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/hyperf.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/hyperf.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/autoload/middlewares.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/autoload/middlewares.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/container/classes.cache" beforeDir="false" afterPath="$PROJECT_DIR$/runtime/container/classes.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/container/scan.cache" beforeDir="false" afterPath="$PROJECT_DIR$/runtime/container/scan.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/runtime/hyperf.pid" beforeDir="false" afterPath="$PROJECT_DIR$/runtime/hyperf.pid" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/logs/hyperf.log" beforeDir="false" afterPath="$PROJECT_DIR$/runtime/logs/hyperf.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/installed.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/installed.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/installed.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/installed.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -170,6 +183,7 @@
       <path value="$PROJECT_DIR$/vendor/hyperf/translation" />
       <path value="$PROJECT_DIR$/vendor/hyperf/validation" />
       <path value="$PROJECT_DIR$/vendor/hyperf/watcher" />
+      <path value="$PROJECT_DIR$/vendor/firebase/php-jwt" />
     </include_path>
   </component>
   <component name="ProjectId" id="2PzVDgKrmddVRPm6jYR07BRsb92" />
@@ -182,7 +196,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../gitwork/lgbv3" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/config/autoload" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -193,6 +207,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\php_code\hyperf-skeleton\user\hyperf\config\autoload" />
+      <recent name="E:\php_code\hyperf-skeleton\user\hyperf\app" />
       <recent name="E:\php_code\hyperf-skeleton\user\hyperf\public\images" />
       <recent name="E:\php_code\hyperf-skeleton\user\hyperf" />
       <recent name="E:\php_code\hyperf-skeleton\user\hyperf\vendor" />
@@ -218,6 +234,7 @@
       <workItem from="1684808067067" duration="20754000" />
       <workItem from="1684887852533" duration="18428000" />
       <workItem from="1685060526641" duration="6410000" />
+      <workItem from="1685094364225" duration="3685000" />
     </task>
     <task id="LOCAL-00001" summary="未能遵守PSR-4自动加载标准">
       <created>1684481589369</created>
@@ -415,7 +432,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684917676927</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="vendor也更新到git">
+      <created>1685092261887</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1685092261887</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -444,7 +468,8 @@
     <MESSAGE value="已认证人员，信息展示接口完成" />
     <MESSAGE value="单独上传特殊认证完成" />
     <MESSAGE value="修改code值为int类型" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改code值为int类型" />
+    <MESSAGE value="vendor也更新到git" />
+    <option name="LAST_COMMIT_MESSAGE" value="vendor也更新到git" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
