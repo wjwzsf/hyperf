@@ -47,16 +47,22 @@ class PayMethod extends AbstractController
                         ];
                     }else{
                         $bank_card_number = $checkData['result']['bank_card_number'];
-                        $result['code']=200;
-                        $result['message']='识别成功';
-                        $result['info']['bankcardurl']=$imgReturn['url'];
-                        $result['info']['bank_card_number'] = $bank_card_number;
-                        //顺带识别银行名称
                         $PayMethod = new \App\Dao\PayMethod();
-                        $cardResult = $PayMethod->validateCard($bank_card_number);
-                        if($cardResult['code']==200){
-                            $result['info']['bankname'] = $cardResult['info']['bankname'];
-                            $result['info']['abbreviation'] = $cardResult['info']['abbreviation'];
+                        //查询银行卡号是否重复
+                        $cardCheck = $PayMethod->cardCheck($bank_card_number);
+                        if ($cardCheck['code']==400){
+                            $result = $cardCheck;
+                        }else{
+                            $result['code']=200;
+                            $result['message']='识别成功';
+                            $result['info']['bankcardurl']=$imgReturn['url'];
+                            $result['info']['bank_card_number'] = $bank_card_number;
+                            //顺带识别银行名称
+                            $cardResult = $PayMethod->validateCard($bank_card_number);
+                            if($cardResult['code']==200){
+                                $result['info']['bankname'] = $cardResult['info']['bankname'];
+                                $result['info']['abbreviation'] = $cardResult['info']['abbreviation'];
+                            }
                         }
                     }
                     return $this->response->json($result);
@@ -97,7 +103,7 @@ class PayMethod extends AbstractController
      * DateTime: 2023/5/29 9:32
      * describe: 识别银行信息
      */
-    #[GetMapping(path: "validateCard")]
+    #[PostMapping(path: "validateCard")]
     public function validateCard(){
         if($this->request->has('bank_card_number')){
             $bank_card_number = $this->request->input('bank_card_number');
@@ -112,4 +118,26 @@ class PayMethod extends AbstractController
         }
     }
 
+    /**
+     * User: wujiawei
+     * DateTime: 2023/5/29 11:01
+     * describe: 绑定银行卡信息
+     */
+    #[PostMapping(path: "bindCard")]
+    public function bindCard(){
+        // 获取所有参数和文件
+        $params = $this->request->all();
+        // 同时判断多个值
+        if ($this->request->has(['member_id', 'bank_card_number','account_name','opening_bank','holdurl','realname','lapsedate'])) {
+            //调用Dao层处理数据
+            $memberAuth = new \App\Dao\MemberAuth();
+            $result = $memberAuth->bindCard($params);
+        }else{
+            $result = [
+                'code'=>400,
+                'message'=>'参数不完整'
+            ];
+        }
+        return $this->response->json($result);
+    }
 }

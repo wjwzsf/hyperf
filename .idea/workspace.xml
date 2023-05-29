@@ -2,16 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="35965e68-5e65-409f-bc21-635c2a6c9c24" name="默认变更列表" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Dao/PayMethod.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Controller/PayMethod.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Controller/PayMethod.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/container/classes.cache" beforeDir="false" afterPath="$PROJECT_DIR$/runtime/container/classes.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Dao/PayMethod.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Dao/PayMethod.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/runtime/container/scan.cache" beforeDir="false" afterPath="$PROJECT_DIR$/runtime/container/scan.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/runtime/hyperf.pid" beforeDir="false" afterPath="$PROJECT_DIR$/runtime/hyperf.pid" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/runtime/logs/hyperf.log" beforeDir="false" afterPath="$PROJECT_DIR$/runtime/logs/hyperf.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -428,7 +424,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685320541360</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="识别银行卡相关接口完成。">
+      <created>1685328692119</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1685328692119</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -458,7 +461,8 @@
     <MESSAGE value="单独上传特殊认证完成" />
     <MESSAGE value="修改code值为int类型" />
     <MESSAGE value="新增payMethod类" />
-    <option name="LAST_COMMIT_MESSAGE" value="新增payMethod类" />
+    <MESSAGE value="识别银行卡相关接口完成。" />
+    <option name="LAST_COMMIT_MESSAGE" value="识别银行卡相关接口完成。" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
