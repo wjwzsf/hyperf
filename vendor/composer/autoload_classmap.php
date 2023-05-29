@@ -14,6 +14,7 @@ return array(
     'App\\Controller\\OrderTestController' => $baseDir . '/app/Controller/OrderTestController.php',
     'App\\Controller\\PayMethod' => $baseDir . '/app/Controller/PayMethod.php',
     'App\\Dao\\MemberAuth' => $baseDir . '/app/Dao/MemberAuth.php',
+    'App\\Dao\\PayMethod' => $baseDir . '/app/Dao/PayMethod.php',
     'App\\Exception\\Handler\\AppExceptionHandler' => $baseDir . '/app/Exception/Handler/AppExceptionHandler.php',
     'App\\Listener\\DbQueryExecutedListener' => $baseDir . '/app/Listener/DbQueryExecutedListener.php',
     'App\\Listener\\ResumeExitCoordinatorListener' => $baseDir . '/app/Listener/ResumeExitCoordinatorListener.php',

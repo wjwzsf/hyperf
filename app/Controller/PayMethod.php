@@ -128,10 +128,10 @@ class PayMethod extends AbstractController
         // 获取所有参数和文件
         $params = $this->request->all();
         // 同时判断多个值
-        if ($this->request->has(['member_id', 'bank_card_number','account_name','opening_bank','holdurl','realname','lapsedate'])) {
+        if ($this->request->has(['member_id', 'bank_card_number','account_name','opening_bank','bank_of_deposit'])) {
             //调用Dao层处理数据
-            $memberAuth = new \App\Dao\MemberAuth();
-            $result = $memberAuth->bindCard($params);
+            $PayMethod = new \App\Dao\PayMethod();
+            $result = $PayMethod->bindCard($params);
         }else{
             $result = [
                 'code'=>400,
