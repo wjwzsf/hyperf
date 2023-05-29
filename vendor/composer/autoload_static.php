@@ -615,6 +615,7 @@ class ComposerStaticInit6b06af777e53914ad5800e7378b6c70c
         'App\\Controller\\IndexController' => __DIR__ . '/../..' . '/app/Controller/IndexController.php',
         'App\\Controller\\MemberAuth' => __DIR__ . '/../..' . '/app/Controller/MemberAuth.php',
         'App\\Controller\\OrderTestController' => __DIR__ . '/../..' . '/app/Controller/OrderTestController.php',
+        'App\\Controller\\PayMethod' => __DIR__ . '/../..' . '/app/Controller/PayMethod.php',
         'App\\Dao\\MemberAuth' => __DIR__ . '/../..' . '/app/Dao/MemberAuth.php',
         'App\\Exception\\Handler\\AppExceptionHandler' => __DIR__ . '/../..' . '/app/Exception/Handler/AppExceptionHandler.php',
         'App\\Listener\\DbQueryExecutedListener' => __DIR__ . '/../..' . '/app/Listener/DbQueryExecutedListener.php',

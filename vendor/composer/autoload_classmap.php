@@ -12,6 +12,7 @@ return array(
     'App\\Controller\\IndexController' => $baseDir . '/app/Controller/IndexController.php',
     'App\\Controller\\MemberAuth' => $baseDir . '/app/Controller/MemberAuth.php',
     'App\\Controller\\OrderTestController' => $baseDir . '/app/Controller/OrderTestController.php',
+    'App\\Controller\\PayMethod' => $baseDir . '/app/Controller/PayMethod.php',
     'App\\Dao\\MemberAuth' => $baseDir . '/app/Dao/MemberAuth.php',
     'App\\Exception\\Handler\\AppExceptionHandler' => $baseDir . '/app/Exception/Handler/AppExceptionHandler.php',
     'App\\Listener\\DbQueryExecutedListener' => $baseDir . '/app/Listener/DbQueryExecutedListener.php',

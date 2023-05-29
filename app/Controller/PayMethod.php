@@ -6,8 +6,10 @@ namespace App\Controller;
 
 use App\Service\TextRecognitionService;
 use App\Service\UploadServer;
+use Hyperf\DbConnection\Db;
 use Hyperf\Di\Annotation\Inject;
 use Hyperf\HttpServer\Annotation\Controller;
+use Hyperf\HttpServer\Annotation\GetMapping;
 use Hyperf\HttpServer\Annotation\PostMapping;
 
 #[Controller(prefix: "payMethod")]
@@ -38,16 +40,26 @@ class PayMethod extends AbstractController
                     ];
                     $checkData = $this->recognitionService->bankcard($data);
                     @unlink(BASE_PATH . $imgReturn['localurl']);
-                    return $checkData;
-//                    //检测银行卡
-//                    $memberAuth = new \App\Dao\MemberAuth();
-//                    $result = $memberAuth->checkFace($checkData);
-//                    if ($result['code']==200){
-//                        //设置返回的地址
-//                        $result['bankcardurl']=$imgReturn['url'];
-//                    }
-//                    @unlink(BASE_PATH . $imgReturn['localurl']);
-//                    return $result;
+                    if(isset($checkData['error_code'])){
+                        $result = [
+                            'code'=>400,
+                            'message'=>'识别失败，请重试'
+                        ];
+                    }else{
+                        $bank_card_number = $checkData['result']['bank_card_number'];
+                        $result['code']=200;
+                        $result['message']='识别成功';
+                        $result['info']['bankcardurl']=$imgReturn['url'];
+                        $result['info']['bank_card_number'] = $bank_card_number;
+                        //顺带识别银行名称
+                        $PayMethod = new \App\Dao\PayMethod();
+                        $cardResult = $PayMethod->validateCard($bank_card_number);
+                        if($cardResult['code']==200){
+                            $result['info']['bankname'] = $cardResult['info']['bankname'];
+                            $result['info']['abbreviation'] = $cardResult['info']['abbreviation'];
+                        }
+                    }
+                    return $this->response->json($result);
                 case 400:
                     //图片上传失败
                     return $this->response->json($imgReturn);
@@ -56,6 +68,46 @@ class PayMethod extends AbstractController
             return [
                 'code'=>400,
                 'message' => '请上传图片',
+            ];
+        }
+    }
+
+    /**
+     * User: wujiawei
+     * DateTime: 2023/5/29 9:11
+     * describe: 获取真实姓名
+     */
+    #[GetMapping(path: "realname")]
+    public function getRealName(){
+        if($this->request->has('member_id')){
+            $member_id = $this->request->input('member_id');
+            $PayMethod = new \App\Dao\PayMethod();
+            $result = $PayMethod->getRealName($member_id);
+            return $this->response->json($result);
+        }else{
+            return [
+                'code'=>400,
+                'message' => '参数错误',
+            ];
+        }
+    }
+
+    /**
+     * User: wujiawei
+     * DateTime: 2023/5/29 9:32
+     * describe: 识别银行信息
+     */
+    #[GetMapping(path: "validateCard")]
+    public function validateCard(){
+        if($this->request->has('bank_card_number')){
+            $bank_card_number = $this->request->input('bank_card_number');
+            $PayMethod = new \App\Dao\PayMethod();
+            $result = $PayMethod->validateCard($bank_card_number);
+            return $result;
+        }else{
+            return [
+                'code'=>400,
+                'message' => '参数错误',
             ];
         }
     }
