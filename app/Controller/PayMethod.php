@@ -152,9 +152,9 @@ class PayMethod extends AbstractController
 
     /**
      * User: wujiawei
-     * DateTime: 2023/5/30 10:06
-     * describe:短信发送
-     * @return array|int[]|string
+     * DateTime: 2023/5/30 11:14
+     * describe:查看银行卡信息时--发送短信
+     * @return \Psr\Http\Message\ResponseInterface
      */
     #[PostMapping(path: "sendCardCode")]
     public function sendCardCode(){
@@ -177,6 +177,13 @@ class PayMethod extends AbstractController
         }
         return $this->response->json($result);
     }
+
+    /**
+     * User: wujiawei
+     * DateTime: 2023/5/30 11:13
+     * describe:查看银行卡信息时--验证短信
+     * @return \Psr\Http\Message\ResponseInterface
+     */
     #[PostMapping(path: "checkCardCode")]
     public function checkCardCode(){
         if($this->request->has('phone','checkcode')){
@@ -188,7 +195,35 @@ class PayMethod extends AbstractController
                   'code'=>200,
                   'message'=>'ok'
                 ];
+            }else{
+                $result = [
+                    'code'=>400,
+                    'message'=>'验证失败，请填写正确的验证码'
+                ];
             }
+        }else{
+            $result = [
+                'code'=>400,
+                'message'=>'参数不完整'
+            ];
+        }
+        return $this->response->json($result);
+    }
+
+    /**
+     * User: wujiawei
+     * DateTime: 2023/5/30 14:10
+     * describe:收款方式首页
+     * @return \Psr\Http\Message\ResponseInterface
+     */
+    #[PostMapping(path: "index")]
+    public function payMethodIndex(){
+        if($this->request->has('member_id')){
+            // 获取所有参数和文件
+            $params = $this->request->all();
+            //调用Dao层处理数据
+            $PayMethod = new \App\Dao\PayMethod();
+            $result = $PayMethod->getPayMethodIndex($params);
         }else{
             $result = [
                 'code'=>400,

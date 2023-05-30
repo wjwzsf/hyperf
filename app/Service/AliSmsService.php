@@ -49,10 +49,10 @@ class AliSmsService
         if ($result->body->message == 'OK' && $result->body->code == 'OK') {
             $redis = ApplicationContext::getContainer()->get(\Hyperf\Redis\Redis::class);
             $redis->set($options['key'],$options['value'],$options['expiry']);
-            return ['status' => 200,'message'=>'发送成功'];
+            return ['code' => 200,'message'=>'发送成功'];
         }
         if ($result->body->code == 'isv.MOBILE_NUMBER_ILLEGAL') {
-            return ['code' => 400, 'message' => ''];
+            return ['code' => 400, 'message' => '手机号码格式错误'];
         }
         return ['code' => 400, 'message' => '短信发送失败，网络繁忙'];
     }

@@ -42,6 +42,18 @@ class PayMethod
         if($cardCheck['code']==400){
             return $cardCheck;
         }
+        return $this->validateCardService($cardNumber);
+    }
+
+    /**
+     * User: wujiawei
+     * DateTime: 2023/5/30 14:19
+     * describe:通过银行卡识别相关信息（公用）
+     * @param $cardNumber
+     * @return array
+     * @throws \GuzzleHttp\Exception\GuzzleException
+     */
+    public function validateCardService($cardNumber){
         $url = "https://ccdcapi.alipay.com/validateAndCacheCardInfo.json";
         $param = [
             '_input_charset' => 'utf-8',
@@ -67,7 +79,6 @@ class PayMethod
         }
         return $result;
     }
-
     /**
      * User: wujiawei
      * DateTime: 2023/5/29 13:56
@@ -144,12 +155,73 @@ class PayMethod
             ];
         }catch (\Throwable $e) {
             Db::rollBack();
-            var_dump($e->getMessage());
             return [
                 'code'=>400,
                 'message'=>'审核失败'
             ];
         }
+    }
+
+    /**
+     * User: wujiawei
+     * DateTime: 2023/5/30 14:10
+     * describe:收款方式首页
+     * @param $data
+     * @return int[]
+     */
+    public function getPayMethodIndex($data){
+        //查询card银行卡号
+        $card = Db::table('person_info')->where('member_id',$data['member_id'])->value('card');
+        if($card){
+            $cardNumber = str_replace(' ', '', $card); // 去除空格
+            //查询在paybind中是否存在
+            $payBind = Db::table('paybind')->where(['member_id'=>$data['member_id'],'bind_type'=>0,'is_del'=>0])->first();
+            if($payBind){
+               if(empty($payBind->abbreviation)){
+                   //没有存入的也需要增加一份新的记录
+                   $this->CardLogPerfect($data['member_id'],$cardNumber);
+               }
+            }else{
+                //paybind中不存在，需要增加记录
+                $this->CardLogPerfect($data['member_id'],$cardNumber);
+            }
+        }else{
+            return [
+               'code'=>201,//未绑定
+            ];
+        }
+        return [
+          'code'=>200
+        ];
+    }
+    //用于新增银行卡记录，旧用户没有logo等信息时
+    private function CardLogPerfect($member_id,$cardNumber){
+        $validateCardResult = $this->validateCardService($cardNumber);
+        if($validateCardResult['code']==200){
+            try {
+                Db::beginTransaction();
+
+                $abbreviation = $validateCardResult['info']['abbreviation'];
+                $account_name = $validateCardResult['info']['bankname'];
+                $cardPayData = array(
+                    'openid' => $cardNumber,
+                    'member_id' => $member_id,
+                    'bind_type' => 0,
+                    'createtime' => time(),
+                    'real_name' => $account_name,
+                    'is_del' => 0,
+                    'abbreviation' => $abbreviation
+                );
+                //新增日志记录
+                Db::table('paybind')->insert($cardPayData);
+                //修改次数+1
+                Db::table('person_info')->where('member_id', $member_id)->increment('bankcard_change_count', 1);
+                Db::commit();
+            }catch (\Throwable $e) {
+                Db::rollBack();
+            }
+        }
+        return true;
     }
 
 }
