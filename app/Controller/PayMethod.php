@@ -232,4 +232,27 @@ class PayMethod extends AbstractController
         }
         return $this->response->json($result);
     }
+
+    /**
+     * User: wujiawei
+     * DateTime: 2023/5/30 15:28
+     * describe:银行卡已绑定页面
+     * @return \Psr\Http\Message\ResponseInterface
+     */
+    #[PostMapping(path: "cardpage")]
+    public function cardPage(){
+        if($this->request->has('member_id')){
+            // 获取所有参数和文件
+            $params = $this->request->all();
+            //调用Dao层处理数据
+            $PayMethod = new \App\Dao\PayMethod();
+            $result = $PayMethod->getCardPage($params);
+        }else{
+            $result = [
+                'code'=>400,
+                'message'=>'参数不完整'
+            ];
+        }
+        return $this->response->json($result);
+    }
 }

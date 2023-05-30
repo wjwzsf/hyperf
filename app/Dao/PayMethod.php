@@ -208,7 +208,6 @@ class PayMethod
                     'member_id' => $member_id,
                     'bind_type' => 0,
                     'createtime' => time(),
-                    'real_name' => $account_name,
                     'is_del' => 0,
                     'abbreviation' => $abbreviation
                 );
@@ -224,4 +223,35 @@ class PayMethod
         return true;
     }
 
+    /**
+     * User: wujiawei
+     * DateTime: 2023/5/30 15:28
+     * describe:银行卡已绑定页面
+     * @param $data
+     * @return array
+     */
+    public function getCardPage($data){
+        //查询银行卡相关信息
+        //查询在paybind中是否存在
+        $cardData = (array)Db::table('paybind')
+                    ->join('bank_card_base', 'paybind.abbreviation', '=', 'bank_card_base.abbreviation')
+                    ->where([
+                        'paybind.member_id' => $data['member_id'],
+                        'paybind.bind_type' => 0,
+                        'paybind.is_del' => 0,
+                    ])
+                    ->select(
+                        'paybind.openid as cardnumber',
+                        'bank_card_base.logo',
+                        'bank_card_base.bankground',
+                        'bank_card_base.fullname as bankname'
+                    )
+                    ->first();
+        //隐藏银行卡
+        $len = strlen($cardData['cardnumber']);
+        $suffix = substr($cardData['cardnumber'], -4); // 获取后四位
+        $prefix = str_repeat('*', $len - 4); // 获取前 n - 4 位，用 * 号代替
+        $cardData['cardnumber_hide'] = $prefix.$suffix;
+        return $cardData;
+    }
 }
