@@ -340,3 +340,4 @@
 [2023-05-29 09:13:06] sql.INFO: [132.71] select `real_name` from `ly_person_info` where `member_id` = '105743' limit 1 [] []
 [2023-05-29 09:13:08] sql.INFO: [44.45] select count(*) as aggregate from `ly_person_info` where (`card` = '') [] []
 [2023-05-29 09:13:13] sql.INFO: [101.93] select count(*) as aggregate from `ly_person_info` where (`card` = '') [] []
+[2023-05-30 01:56:56] sql.INFO: [166.04] select `real_name` from `ly_person_info` where `member_id` = '105743' limit 1 [] []

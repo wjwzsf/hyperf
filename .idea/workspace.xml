@@ -2,23 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="35965e68-5e65-409f-bc21-635c2a6c9c24" name="默认变更列表" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/hyperf.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/hyperf.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Service/AliSmsService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/autoload/sms.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Controller/PayMethod.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Controller/PayMethod.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/container/classes.cache" beforeDir="false" afterPath="$PROJECT_DIR$/runtime/container/classes.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/container/proxy/App_Controller_AbstractController.proxy.php" beforeDir="false" afterPath="$PROJECT_DIR$/runtime/container/proxy/App_Controller_AbstractController.proxy.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/container/proxy/App_Controller_IndexController.proxy.php" beforeDir="false" afterPath="$PROJECT_DIR$/runtime/container/proxy/App_Controller_IndexController.proxy.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/container/scan.cache" beforeDir="false" afterPath="$PROJECT_DIR$/runtime/container/scan.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/runtime/hyperf.pid" beforeDir="false" afterPath="$PROJECT_DIR$/runtime/hyperf.pid" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_files.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_files.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/installed.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/installed.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/installed.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/installed.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/logs/hyperf.log" beforeDir="false" afterPath="$PROJECT_DIR$/runtime/logs/hyperf.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -460,7 +448,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685340341567</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="发送短信成功，引入sms依赖">
+      <created>1685411752699</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1685411752699</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -492,7 +487,8 @@
     <MESSAGE value="新增payMethod类" />
     <MESSAGE value="识别银行卡相关接口完成。" />
     <MESSAGE value="增加银行卡唯一性验证" />
-    <option name="LAST_COMMIT_MESSAGE" value="增加银行卡唯一性验证" />
+    <MESSAGE value="发送短信成功，引入sms依赖" />
+    <option name="LAST_COMMIT_MESSAGE" value="发送短信成功，引入sms依赖" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
