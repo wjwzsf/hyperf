@@ -4,6 +4,7 @@
 namespace App\Controller;
 
 
+use App\Service\AliSmsService;
 use App\Service\TextRecognitionService;
 use App\Service\UploadServer;
 use Hyperf\DbConnection\Db;
@@ -19,7 +20,8 @@ class PayMethod extends AbstractController
     private TextRecognitionService $recognitionService;//ocr识别服务 通过依赖注入服务
     #[Inject]
     private UploadServer $uploadServer;//上传图片服务
-
+    #[Inject]
+    private AliSmsService $aliSmsService;//阿里云短信服务
     /**
      * User: wujiawei
      * DateTime: 2023/5/22 14:24
@@ -139,5 +141,17 @@ class PayMethod extends AbstractController
             ];
         }
         return $this->response->json($result);
+    }
+
+    #[GetMapping(path: "sendcode")]
+    public function sendcode(){
+        $phone = '15131678151';
+        $code = rand(100000, 999999);
+        $result = $this->aliSmsService->verify($phone, $code);
+        if ($result['status'] == 1) {
+            return '发送成功';
+        }else{
+            return $result;
+        }
     }
 }
