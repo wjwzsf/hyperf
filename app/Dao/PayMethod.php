@@ -122,8 +122,8 @@ class PayMethod
             ];
             Db::table('person_info')->where('member_id',$data['member_id'])->update($person_info_update);
             Db::table('person_info')->where('member_id',$data['member_id'])->increment('bankcard_change_count',1);
-            //2.修改银行卡信息后需要重签协议，所以修改member表  save(array('person_status'=>0,'person_tongyi'=>3))
-            Db::table('member')->where('id',$data['member_id'])->update(['person_status'=>0,'person_tongyi'=>3]);
+            //2.取消 修改银行卡信息后需要重签协议，所以修改member表  save(array('person_status'=>0,'person_tongyi'=>3))
+            //Db::table('member')->where('id',$data['member_id'])->update(['person_status'=>0,'person_tongyi'=>3]);
             //3.银行卡信息变更记录 abbreviation 银行简称代码
             Db::table('paybind')->where(['member_id'=>$data['member_id'],'bind_type'=>0])->update(['is_del'=>1]);
             $cardPayData = array(
@@ -272,7 +272,8 @@ class PayMethod
             ];
         }else{
             return [
-                'code'=>400
+                'code'=>400,
+                'message'=>'密码错误，请重试'
             ];
         }
     }
