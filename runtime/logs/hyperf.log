@@ -614,3 +614,6 @@
 [2023-05-30 09:09:58] sql.INFO: [42.82] select `fullname` from `ly_bank_card_base` where `abbreviation` = 'CMBC' limit 1 [] []
 [2023-05-30 09:11:17] sql.INFO: [266.22] select `fullname` from `ly_bank_card_base` where `abbreviation` = 'ABC' limit 1 [] []
 [2023-05-30 09:11:35] sql.INFO: [44.39] select `fullname` from `ly_bank_card_base` where `abbreviation` = 'CEB' limit 1 [] []
+[2023-05-30 09:17:57] sql.INFO: [189.37] select count(*) as aggregate from `ly_person_info` where (`card` = '6225757555369561') [] []
+[2023-05-30 09:17:57] sql.INFO: [61.65] select count(*) as aggregate from `ly_person_info` where (`card` = '6225757555369561') [] []
+[2023-05-30 09:17:57] sql.INFO: [39.68] select `fullname` from `ly_bank_card_base` where `abbreviation` = 'CMB' limit 1 [] []

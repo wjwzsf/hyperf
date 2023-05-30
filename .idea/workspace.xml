@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="35965e68-5e65-409f-bc21-635c2a6c9c24" name="默认变更列表" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Controller/PayMethod.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Controller/PayMethod.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Dao/PayMethod.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Dao/PayMethod.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/runtime/hyperf.pid" beforeDir="false" afterPath="$PROJECT_DIR$/runtime/hyperf.pid" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/runtime/logs/hyperf.log" beforeDir="false" afterPath="$PROJECT_DIR$/runtime/logs/hyperf.log" afterDir="false" />
@@ -489,7 +490,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685436134491</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="修改一些代码">
+      <created>1685437982563</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1685437982563</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -497,7 +505,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="Model 不自动管理 创建和修改" />
     <MESSAGE value="上传图片成功" />
     <MESSAGE value="个人用户识别功能一部分" />
     <MESSAGE value="个人用户识别功能基本完善" />
@@ -522,7 +529,8 @@
     <MESSAGE value="收款方式首页 接口完成（包含老用户记录增加）" />
     <MESSAGE value="银行卡已绑定页面 接口完成" />
     <MESSAGE value="查看银行卡信息时--通过密码验证接口" />
-    <option name="LAST_COMMIT_MESSAGE" value="查看银行卡信息时--通过密码验证接口" />
+    <MESSAGE value="修改一些代码" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改一些代码" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -68,7 +68,8 @@ class PayMethod
                 'message'=>'ok',
                 'info'=>[
                     'bankname'=>$bankname ? : '',
-                    'abbreviation'=>$result['bank']
+                    'abbreviation'=>$result['bank'],
+                    'cardtype'=>$result['cardType']
                 ]
             ];
         }else{
@@ -133,7 +134,8 @@ class PayMethod
                 'createtime'    =>time(),
                 'real_name'     =>$data['account_name'],
                 'is_del'        =>0,
-                'abbreviation'  =>$data['abbreviation'] ? : ''
+                'abbreviation'  =>$data['abbreviation'] ? : '',
+                'cardtype'      =>$data['cardtype'] ? : ''
             );
             Db::table('paybind')->insert($cardPayData);
             //4.增加变更记录  collection_type_log
@@ -202,14 +204,15 @@ class PayMethod
                 Db::beginTransaction();
 
                 $abbreviation = $validateCardResult['info']['abbreviation'];
-                $account_name = $validateCardResult['info']['bankname'];
+                $cardtype = $validateCardResult['info']['cardtype'];
                 $cardPayData = array(
                     'openid' => $cardNumber,
                     'member_id' => $member_id,
                     'bind_type' => 0,
                     'createtime' => time(),
                     'is_del' => 0,
-                    'abbreviation' => $abbreviation
+                    'abbreviation' => $abbreviation,
+                    'cardtype'     =>$cardtype
                 );
                 //新增日志记录
                 Db::table('paybind')->insert($cardPayData);
@@ -244,7 +247,8 @@ class PayMethod
                         'paybind.openid as cardnumber',
                         'bank_card_base.logo',
                         'bank_card_base.bankground',
-                        'bank_card_base.fullname as bankname'
+                        'bank_card_base.fullname as bankname',
+                        'paybind.cardtype'
                     )
                     ->first();
         //隐藏银行卡

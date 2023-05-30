@@ -71,6 +71,7 @@ class PayMethod extends AbstractController
                             if($cardResult['code']==200){
                                 $result['info']['bankname'] = $cardResult['info']['bankname'];
                                 $result['info']['abbreviation'] = $cardResult['info']['abbreviation'];
+                                $result['info']['cardtype'] = $cardResult['info']['cardtype'];
                             }
                         }
                     }
