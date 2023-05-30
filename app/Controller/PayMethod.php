@@ -7,7 +7,7 @@ namespace App\Controller;
 use App\Service\AliSmsService;
 use App\Service\TextRecognitionService;
 use App\Service\UploadServer;
-use Hyperf\DbConnection\Db;
+use Hyperf\Context\ApplicationContext;
 use Hyperf\Di\Annotation\Inject;
 use Hyperf\HttpServer\Annotation\Controller;
 use Hyperf\HttpServer\Annotation\GetMapping;
@@ -16,6 +16,13 @@ use Hyperf\HttpServer\Annotation\PostMapping;
 #[Controller(prefix: "payMethod")]
 class PayMethod extends AbstractController
 {
+    private $redis;
+    public function __construct()
+    {
+        //redis设置
+        $this->redis = ApplicationContext::getContainer()->get(\Hyperf\Redis\Redis::class);
+    }
+
     #[Inject]
     private TextRecognitionService $recognitionService;//ocr识别服务 通过依赖注入服务
     #[Inject]
@@ -143,15 +150,51 @@ class PayMethod extends AbstractController
         return $this->response->json($result);
     }
 
-    #[GetMapping(path: "sendcode")]
-    public function sendcode(){
-        $phone = '15131678151';
-        $code = rand(100000, 999999);
-        $result = $this->aliSmsService->verify($phone, $code);
-        if ($result['status'] == 1) {
-            return '发送成功';
+    /**
+     * User: wujiawei
+     * DateTime: 2023/5/30 10:06
+     * describe:短信发送
+     * @return array|int[]|string
+     */
+    #[PostMapping(path: "sendCardCode")]
+    public function sendCardCode(){
+        if($this->request->has('phone')){
+            $phone = $this->request->input('phone');
+            $code = rand(100000, 999999);
+            //设置存入redis的值
+            $options = [
+                'key'=>"seecard".$phone,
+                'value'=>$code,
+                'expiry'=>300
+            ];
+            //发送短信
+            $result = $this->aliSmsService->verify($phone, $code, $options);
         }else{
-            return $result;
+            $result = [
+                'code'=>400,
+                'message'=>'参数不完整'
+            ];
         }
+        return $this->response->json($result);
+    }
+    #[PostMapping(path: "checkCardCode")]
+    public function checkCardCode(){
+        if($this->request->has('phone','checkcode')){
+            $phone = $this->request->input('phone');
+            $checkcode = $this->request->input('checkcode');
+            $code = $this->redis->get("seecard".$phone);
+            if($checkcode==$code){
+                $result = [
+                  'code'=>200,
+                  'message'=>'ok'
+                ];
+            }
+        }else{
+            $result = [
+                'code'=>400,
+                'message'=>'参数不完整'
+            ];
+        }
+        return $this->response->json($result);
     }
 }
