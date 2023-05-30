@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="35965e68-5e65-409f-bc21-635c2a6c9c24" name="默认变更列表" comment="">
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Controller/PayMethod.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Controller/PayMethod.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Dao/PayMethod.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Dao/PayMethod.php" afterDir="false" />
@@ -477,7 +478,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685427849579</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="银行卡已绑定页面 接口完成">
+      <created>1685431710192</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1685431710192</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -485,7 +493,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="修改了一些东西" />
     <MESSAGE value="推送到了rabbitmq但是没有执行倒计时功能" />
     <MESSAGE value="Model 不自动管理 创建和修改" />
     <MESSAGE value="上传图片成功" />
@@ -510,7 +517,8 @@
     <MESSAGE value="修改sms配置" />
     <MESSAGE value="发送短信方面完成" />
     <MESSAGE value="收款方式首页 接口完成（包含老用户记录增加）" />
-    <option name="LAST_COMMIT_MESSAGE" value="收款方式首页 接口完成（包含老用户记录增加）" />
+    <MESSAGE value="银行卡已绑定页面 接口完成" />
+    <option name="LAST_COMMIT_MESSAGE" value="银行卡已绑定页面 接口完成" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

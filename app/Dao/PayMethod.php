@@ -252,6 +252,40 @@ class PayMethod
         $suffix = substr($cardData['cardnumber'], -4); // 获取后四位
         $prefix = str_repeat('*', $len - 4); // 获取前 n - 4 位，用 * 号代替
         $cardData['cardnumber_hide'] = $prefix.$suffix;
+        //查询手机号码
+        $contact_tel = Db::table('member')->where('id',$data['member_id'])->value('contact_tel');
+        $cardData['phone']=$contact_tel;
         return $cardData;
+    }
+
+    /**
+     * User: wujiawei
+     * DateTime: 2023/5/30 16:10
+     * describe: 查看银行卡信息时--通过密码验证
+     */
+    public function pwdVerifyCard($data){
+        $nowpassword = $this->sp_password($data['password']);
+        $password = Db::table('member')->where('contact_tel',$data['phone'])->value('password');
+        if($nowpassword == $password){
+            return [
+              'code'=>200
+            ];
+        }else{
+            return [
+                'code'=>400
+            ];
+        }
+    }
+
+    /**
+     * User: wujiawei
+     * DateTime: 2023/5/30 16:15
+     * describe: 灵工邦app--密码生成
+     * @param $pw
+     * @return string
+     */
+    private function sp_password($pw){
+        $authcode=env('LGB_AUTHCODE','XDejp9dwP6caQ7rC1q');
+        return "###".md5(md5($authcode.$pw));
     }
 }

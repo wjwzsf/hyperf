@@ -255,4 +255,27 @@ class PayMethod extends AbstractController
         }
         return $this->response->json($result);
     }
+
+    /**
+     * User: wujiawei
+     * DateTime: 2023/5/30 15:28
+     * describe:查看银行卡信息时--通过密码验证
+     * @return \Psr\Http\Message\ResponseInterface
+     */
+    #[PostMapping(path: "pwdVerifyCard")]
+    public function pwdVerifyCard(){
+        if($this->request->has('phone','password')){
+            // 获取所有参数和文件
+            $params = $this->request->all();
+            //调用Dao层处理数据
+            $PayMethod = new \App\Dao\PayMethod();
+            $result = $PayMethod->pwdVerifyCard($params);
+        }else{
+            $result = [
+                'code'=>400,
+                'message'=>'参数不完整'
+            ];
+        }
+        return $this->response->json($result);
+    }
 }
