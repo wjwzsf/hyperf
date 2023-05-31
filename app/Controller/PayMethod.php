@@ -279,4 +279,27 @@ class PayMethod extends AbstractController
         }
         return $this->response->json($result);
     }
+
+    /**
+     * User: wujiawei
+     * DateTime: 2023/5/31 13:59
+     * describe:保存优先付款方式
+     * @return \Psr\Http\Message\ResponseInterface
+     */
+    #[PostMapping(path: "saveCollectionType")]
+    public function saveCollectionType(){
+        if($this->request->has('member_id','collection_type')){
+            // 获取所有参数和文件
+            $params = $this->request->all();
+            //调用Dao层处理数据
+            $PayMethod = new \App\Dao\PayMethod();
+            $result = $PayMethod->saveCollectionType($params);
+        }else{
+            $result = [
+                'code'=>400,
+                'message'=>'参数不完整'
+            ];
+        }
+        return $this->response->json($result);
+    }
 }

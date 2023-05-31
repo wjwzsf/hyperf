@@ -293,4 +293,28 @@ class PayMethod
         $authcode=env('LGB_AUTHCODE','XDejp9dwP6caQ7rC1q');
         return "###".md5(md5($authcode.$pw));
     }
+
+    /**
+     * User: wujiawei
+     * DateTime: 2023/5/31 13:59
+     * describe:保存优先付款方式
+     * @param $data
+     * @return array
+     */
+    public function saveCollectionType($data){
+        $result = Db::table('person_info')->where('member_id',$data['member_id'])->update(['collection_type'=>$data['collection_type']]);
+        if ($result === false) {
+            // 更新失败
+            return [
+              'code'=>200,
+              'message'=>'保存成功'
+            ];
+        } else {
+            // 更新成功
+            return [
+                'code'=>400,
+                'message'=>'保存失败'
+            ];
+        }
+    }
 }

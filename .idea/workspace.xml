@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="35965e68-5e65-409f-bc21-635c2a6c9c24" name="默认变更列表" comment="修改一些代码">
+    <list default="true" id="35965e68-5e65-409f-bc21-635c2a6c9c24" name="默认变更列表" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Controller/PayMethod.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Controller/PayMethod.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Dao/PayMethod.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Dao/PayMethod.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/hyperf.pid" beforeDir="false" afterPath="$PROJECT_DIR$/runtime/hyperf.pid" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/runtime/logs/hyperf.log" beforeDir="false" afterPath="$PROJECT_DIR$/runtime/logs/hyperf.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -193,7 +193,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../gitwork/lgbv3" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -230,7 +230,8 @@
       <workItem from="1684887852533" duration="18428000" />
       <workItem from="1685060526641" duration="6410000" />
       <workItem from="1685443426009" duration="1090000" />
-      <workItem from="1685492854787" duration="1975000" />
+      <workItem from="1685492854787" duration="2802000" />
+      <workItem from="1685512353398" duration="459000" />
     </task>
     <task id="LOCAL-00001" summary="未能遵守PSR-4自动加载标准">
       <created>1684481589369</created>
@@ -505,7 +506,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685439109266</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="银行卡号检测，错误提示修改">
+      <created>1685497864320</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1685497864320</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -513,7 +521,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="上传图片成功" />
     <MESSAGE value="个人用户识别功能一部分" />
     <MESSAGE value="个人用户识别功能基本完善" />
     <MESSAGE value="个人用户身份证识别功能成功" />
@@ -538,7 +545,8 @@
     <MESSAGE value="银行卡已绑定页面 接口完成" />
     <MESSAGE value="查看银行卡信息时--通过密码验证接口" />
     <MESSAGE value="修改一些代码" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改一些代码" />
+    <MESSAGE value="银行卡号检测，错误提示修改" />
+    <option name="LAST_COMMIT_MESSAGE" value="银行卡号检测，错误提示修改" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
