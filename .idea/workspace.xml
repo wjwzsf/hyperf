@@ -2,193 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="35965e68-5e65-409f-bc21-635c2a6c9c24" name="默认变更列表" comment="vendor文件更新">
-      <change afterPath="$PROJECT_DIR$/vendor/adbario/php-dot-notation/LICENSE.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/adbario/php-dot-notation/composer.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/adbario/php-dot-notation/src/Dot.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/adbario/php-dot-notation/src/helpers.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/credentials/CHANGELOG.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/credentials/CONTRIBUTING.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/credentials/LICENSE.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/credentials/NOTICE.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/credentials/README-zh-CN.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/credentials/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/credentials/SECURITY.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/credentials/UPGRADING.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/credentials/composer.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/credentials/src/AccessKeyCredential.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/credentials/src/BearerTokenCredential.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/credentials/src/Credential.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/credentials/src/Credential/Config.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/credentials/src/Credentials.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/credentials/src/CredentialsInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/credentials/src/EcsRamRoleCredential.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/credentials/src/Filter.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/credentials/src/Helper.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/credentials/src/MockTrait.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/credentials/src/Providers/ChainProvider.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/credentials/src/Providers/EcsRamRoleProvider.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/credentials/src/Providers/Provider.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/credentials/src/Providers/RamRoleArnProvider.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/credentials/src/Providers/RsaKeyPairProvider.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/credentials/src/RamRoleArnCredential.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/credentials/src/Request/AssumeRole.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/credentials/src/Request/GenerateSessionAccessKey.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/credentials/src/Request/Request.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/credentials/src/RsaKeyPairCredential.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/credentials/src/Signature/BearerTokenSignature.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/credentials/src/Signature/ShaHmac1Signature.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/credentials/src/Signature/ShaHmac256Signature.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/credentials/src/Signature/ShaHmac256WithRsaSignature.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/credentials/src/Signature/SignatureInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/credentials/src/StsCredential.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/darabonba-openapi/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/darabonba-openapi/.php_cs.dist" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/darabonba-openapi/README-CN.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/darabonba-openapi/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/darabonba-openapi/autoload.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/darabonba-openapi/composer.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/darabonba-openapi/src/Models/Config.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/darabonba-openapi/src/Models/GlobalParameters.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/darabonba-openapi/src/Models/OpenApiRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/darabonba-openapi/src/Models/Params.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/darabonba-openapi/src/OpenApiClient.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/dysmsapi-20170525/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/dysmsapi-20170525/.php_cs.dist" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/dysmsapi-20170525/ChangeLog.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/dysmsapi-20170525/README-CN.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/dysmsapi-20170525/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/dysmsapi-20170525/autoload.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/dysmsapi-20170525/composer.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/dysmsapi-20170525/src/Dysmsapi.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/dysmsapi-20170525/src/Models/AddShortUrlRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/dysmsapi-20170525/src/Models/AddShortUrlResponse.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/dysmsapi-20170525/src/Models/AddShortUrlResponseBody.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/dysmsapi-20170525/src/Models/AddShortUrlResponseBody/data.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/dysmsapi-20170525/src/Models/AddSmsSignRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/dysmsapi-20170525/src/Models/AddSmsSignRequest/signFileList.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/dysmsapi-20170525/src/Models/AddSmsSignResponse.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/dysmsapi-20170525/src/Models/AddSmsSignResponseBody.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/dysmsapi-20170525/src/Models/AddSmsTemplateRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/dysmsapi-20170525/src/Models/AddSmsTemplateResponse.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/dysmsapi-20170525/src/Models/AddSmsTemplateResponseBody.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/dysmsapi-20170525/src/Models/DeleteShortUrlRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/dysmsapi-20170525/src/Models/DeleteShortUrlResponse.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/dysmsapi-20170525/src/Models/DeleteShortUrlResponseBody.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/dysmsapi-20170525/src/Models/DeleteSmsSignRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/dysmsapi-20170525/src/Models/DeleteSmsSignResponse.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/dysmsapi-20170525/src/Models/DeleteSmsSignResponseBody.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/dysmsapi-20170525/src/Models/DeleteSmsTemplateRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/dysmsapi-20170525/src/Models/DeleteSmsTemplateResponse.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/dysmsapi-20170525/src/Models/DeleteSmsTemplateResponseBody.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/dysmsapi-20170525/src/Models/ModifySmsSignRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/dysmsapi-20170525/src/Models/ModifySmsSignRequest/signFileList.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/dysmsapi-20170525/src/Models/ModifySmsSignResponse.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/dysmsapi-20170525/src/Models/ModifySmsSignResponseBody.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/dysmsapi-20170525/src/Models/ModifySmsTemplateRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/dysmsapi-20170525/src/Models/ModifySmsTemplateResponse.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/dysmsapi-20170525/src/Models/ModifySmsTemplateResponseBody.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/dysmsapi-20170525/src/Models/QuerySendDetailsRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/dysmsapi-20170525/src/Models/QuerySendDetailsResponse.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/dysmsapi-20170525/src/Models/QuerySendDetailsResponseBody.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/dysmsapi-20170525/src/Models/QuerySendDetailsResponseBody/smsSendDetailDTOs.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/dysmsapi-20170525/src/Models/QuerySendDetailsResponseBody/smsSendDetailDTOs/smsSendDetailDTO.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/dysmsapi-20170525/src/Models/QueryShortUrlRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/dysmsapi-20170525/src/Models/QueryShortUrlResponse.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/dysmsapi-20170525/src/Models/QueryShortUrlResponseBody.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/dysmsapi-20170525/src/Models/QueryShortUrlResponseBody/data.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/dysmsapi-20170525/src/Models/QuerySmsSignRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/dysmsapi-20170525/src/Models/QuerySmsSignResponse.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/dysmsapi-20170525/src/Models/QuerySmsSignResponseBody.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/dysmsapi-20170525/src/Models/QuerySmsTemplateRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/dysmsapi-20170525/src/Models/QuerySmsTemplateResponse.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/dysmsapi-20170525/src/Models/QuerySmsTemplateResponseBody.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/dysmsapi-20170525/src/Models/SendBatchSmsRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/dysmsapi-20170525/src/Models/SendBatchSmsResponse.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/dysmsapi-20170525/src/Models/SendBatchSmsResponseBody.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/dysmsapi-20170525/src/Models/SendSmsRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/dysmsapi-20170525/src/Models/SendSmsResponse.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/dysmsapi-20170525/src/Models/SendSmsResponseBody.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/endpoint-util/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/endpoint-util/.php_cs.dist" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/endpoint-util/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/endpoint-util/README-CN.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/endpoint-util/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/endpoint-util/composer.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/endpoint-util/phpunit.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/endpoint-util/src/Endpoint.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/endpoint-util/tests/EndpointTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/endpoint-util/tests/bootstrap.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/gateway-spi/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/gateway-spi/.php_cs.dist" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/gateway-spi/autoload.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/gateway-spi/composer.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/gateway-spi/src/Client.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/gateway-spi/src/Models/AttributeMap.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/gateway-spi/src/Models/InterceptorContext.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/gateway-spi/src/Models/InterceptorContext/configuration.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/gateway-spi/src/Models/InterceptorContext/request.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/gateway-spi/src/Models/InterceptorContext/response.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/openapi-util/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/openapi-util/.php_cs.dist" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/openapi-util/README-CN.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/openapi-util/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/openapi-util/autoload.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/openapi-util/composer.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/openapi-util/phpunit.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/openapi-util/src/OpenApiUtilClient.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/openapi-util/tests/Models/SourceModel.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/openapi-util/tests/Models/TargetModel.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/openapi-util/tests/OpenApiUtilClientTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/openapi-util/tests/bootstrap.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/tea-utils/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/tea-utils/.php_cs.dist" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/tea-utils/README-CN.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/tea-utils/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/tea-utils/composer.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/tea-utils/phpunit.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/tea-utils/src/Utils.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/tea-utils/src/Utils/RuntimeOptions.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/tea-utils/tests/UtilsTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/tea-utils/tests/bootstrap.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/tea-xml/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/tea-xml/.php_cs.dist" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/tea-xml/README-CN.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/tea-xml/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/tea-xml/composer.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/tea-xml/phpunit.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/tea-xml/src/ArrayToXml.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/tea-xml/src/XML.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/tea-xml/tests/XMLTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/tea-xml/tests/bootstrap.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/tea/.php_cs.dist" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/tea/CHANGELOG.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/tea/LICENSE.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/tea/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/tea/composer.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/tea/src/Exception/TeaError.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/tea/src/Exception/TeaRetryError.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/tea/src/Exception/TeaUnableRetryError.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/tea/src/Helper.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/tea/src/Model.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/tea/src/Parameter.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/tea/src/Request.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/tea/src/Response.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/alibabacloud/tea/src/Tea.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/lizhichao/one-sm/.github/FUNDING.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/lizhichao/one-sm/.github/workflows/sm.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/lizhichao/one-sm/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/lizhichao/one-sm/.php_cs.dist" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/lizhichao/one-sm/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/lizhichao/one-sm/bench.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/lizhichao/one-sm/composer.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/lizhichao/one-sm/src/Sm3.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/lizhichao/one-sm/src/Sm4.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/lizhichao/one-sm/test.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/lizhichao/one-sm/tests/sm3.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/lizhichao/one-sm/tests/sm4.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/container/scan.cache" beforeDir="false" afterPath="$PROJECT_DIR$/runtime/container/scan.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/hyperf.pid" beforeDir="false" afterPath="$PROJECT_DIR$/runtime/hyperf.pid" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/logs/hyperf.log" beforeDir="false" afterPath="$PROJECT_DIR$/runtime/logs/hyperf.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/hyperf.pid" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -200,12 +15,12 @@
     <execution />
   </component>
   <component name="Git.Merge.Settings">
-    <option name="BRANCH" value="featrue-MemberAuth-wjw" />
+    <option name="BRANCH" value="featrue-bankcard" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="featrue-bankcard" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
