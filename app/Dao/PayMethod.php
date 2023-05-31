@@ -306,14 +306,14 @@ class PayMethod
         if ($result === false) {
             // 更新失败
             return [
-              'code'=>200,
-              'message'=>'保存成功'
+                'code'=>400,
+                'message'=>'保存失败'
             ];
         } else {
             // 更新成功
             return [
-                'code'=>400,
-                'message'=>'保存失败'
+                'code'=>200,
+                'message'=>'保存成功'
             ];
         }
     }
