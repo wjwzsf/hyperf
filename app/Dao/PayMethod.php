@@ -75,7 +75,7 @@ class PayMethod
         }else{
             $result = [
                 'code'=>400,
-                'message'=>'检测失败'
+                'message'=>'银行卡号错误,未能识别'
             ];
         }
         return $result;
