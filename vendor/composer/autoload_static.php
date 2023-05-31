@@ -15,21 +15,22 @@ class ComposerStaticInit6b06af777e53914ad5800e7378b6c70c
         'ffe5873ab2256a6c3a4c92b3488528cb' => __DIR__ . '/..' . '/hyperf/support/src/Functions.php',
         'bbeb7603826cb9296dde3ca1a840af47' => __DIR__ . '/..' . '/hyperf/utils/src/Functions.php',
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
+        '6e3fae29631ef280660b3cdad06f25a8' => __DIR__ . '/..' . '/symfony/deprecation-contracts/function.php',
+        '7b11c4dc42b3b3023073cb14e519683c' => __DIR__ . '/..' . '/ralouphie/getallheaders/src/getallheaders.php',
+        'c964ee0ededf28c96ebd9db5099ef910' => __DIR__ . '/..' . '/guzzlehttp/promises/src/functions_include.php',
+        '37a3dc5111fe8f707ab4c132ef1dbc62' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/functions_include.php',
+        'd767e4fc2dc52fe66584ab8c6684783e' => __DIR__ . '/..' . '/adbario/php-dot-notation/src/helpers.php',
         '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
         'a4a119a56e50fbb293281d9a48007e0e' => __DIR__ . '/..' . '/symfony/polyfill-php80/bootstrap.php',
         'e69f7f6ee287b969198c3c9d6777bd38' => __DIR__ . '/..' . '/symfony/polyfill-intl-normalizer/bootstrap.php',
         '8825ede83f2f289127722d4e842cf7e8' => __DIR__ . '/..' . '/symfony/polyfill-intl-grapheme/bootstrap.php',
         'b6b991a57620e2fb6b2f66f03fe9ddc2' => __DIR__ . '/..' . '/symfony/string/Resources/functions.php',
         'a1105708a18b76903365ca1c4aa61b02' => __DIR__ . '/..' . '/symfony/translation/Resources/functions.php',
-        '6e3fae29631ef280660b3cdad06f25a8' => __DIR__ . '/..' . '/symfony/deprecation-contracts/function.php',
         '253c157292f75eb38082b5acb06f3f01' => __DIR__ . '/..' . '/nikic/fast-route/src/functions.php',
-        '7b11c4dc42b3b3023073cb14e519683c' => __DIR__ . '/..' . '/ralouphie/getallheaders/src/getallheaders.php',
         '25072dd6e2470089de65ae7bf11d3109' => __DIR__ . '/..' . '/symfony/polyfill-php72/bootstrap.php',
-        'c964ee0ededf28c96ebd9db5099ef910' => __DIR__ . '/..' . '/guzzlehttp/promises/src/functions_include.php',
         '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
         'decc78cc4436b1292c6c0d151b19445c' => __DIR__ . '/..' . '/phpseclib/phpseclib/phpseclib/bootstrap.php',
         'f598d06aa772fa33d905e87be6398fb1' => __DIR__ . '/..' . '/symfony/polyfill-intl-idn/bootstrap.php',
-        '37a3dc5111fe8f707ab4c132ef1dbc62' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/functions_include.php',
         '9ecd5fc4cc77829926e562e2b7c63f3a' => __DIR__ . '/..' . '/hyperf/translation/src/Functions.php',
         'ec07570ca5a812141189b1fa81503674' => __DIR__ . '/..' . '/phpunit/phpunit/src/Framework/Assert/Functions.php',
         '23c18046f52bef3eea034657bafda50f' => __DIR__ . '/..' . '/symfony/polyfill-php81/bootstrap.php',
@@ -83,6 +84,10 @@ class ComposerStaticInit6b06af777e53914ad5800e7378b6c70c
             'PhpCsFixer\\' => 11,
             'PhpAmqpLib\\' => 11,
             'ParagonIE\\ConstantTime\\' => 23,
+        ),
+        'O' => 
+        array (
+            'OneSm\\' => 6,
         ),
         'M' => 
         array (
@@ -165,6 +170,8 @@ class ComposerStaticInit6b06af777e53914ad5800e7378b6c70c
             'Doctrine\\Common\\Lexer\\' => 22,
             'Doctrine\\Common\\Annotations\\' => 28,
             'DeepCopy\\' => 9,
+            'Darabonba\\OpenApi\\' => 18,
+            'Darabonba\\GatewaySpi\\' => 21,
         ),
         'C' => 
         array (
@@ -177,6 +184,14 @@ class ComposerStaticInit6b06af777e53914ad5800e7378b6c70c
         array (
             'App\\Utils\\AiSdk\\' => 16,
             'App\\' => 4,
+            'AlibabaCloud\\Tea\\XML\\' => 21,
+            'AlibabaCloud\\Tea\\Utils\\' => 23,
+            'AlibabaCloud\\Tea\\' => 17,
+            'AlibabaCloud\\SDK\\Dysmsapi\\V20170525\\' => 36,
+            'AlibabaCloud\\OpenApiUtil\\' => 25,
+            'AlibabaCloud\\Endpoint\\' => 22,
+            'AlibabaCloud\\Credentials\\' => 25,
+            'Adbar\\' => 6,
         ),
     );
 
@@ -326,6 +341,10 @@ class ComposerStaticInit6b06af777e53914ad5800e7378b6c70c
         'ParagonIE\\ConstantTime\\' => 
         array (
             0 => __DIR__ . '/..' . '/paragonie/constant_time_encoding/src',
+        ),
+        'OneSm\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/lizhichao/one-sm/src',
         ),
         'Monolog\\' => 
         array (
@@ -571,6 +590,14 @@ class ComposerStaticInit6b06af777e53914ad5800e7378b6c70c
         array (
             0 => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy',
         ),
+        'Darabonba\\OpenApi\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/alibabacloud/darabonba-openapi/src',
+        ),
+        'Darabonba\\GatewaySpi\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/alibabacloud/gateway-spi/src',
+        ),
         'Composer\\XdebugHandler\\' => 
         array (
             0 => __DIR__ . '/..' . '/composer/xdebug-handler/src',
@@ -596,6 +623,38 @@ class ComposerStaticInit6b06af777e53914ad5800e7378b6c70c
         array (
             0 => __DIR__ . '/../..' . '/app',
         ),
+        'AlibabaCloud\\Tea\\XML\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/alibabacloud/tea-xml/src',
+        ),
+        'AlibabaCloud\\Tea\\Utils\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/alibabacloud/tea-utils/src',
+        ),
+        'AlibabaCloud\\Tea\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/alibabacloud/tea/src',
+        ),
+        'AlibabaCloud\\SDK\\Dysmsapi\\V20170525\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/alibabacloud/dysmsapi-20170525/src',
+        ),
+        'AlibabaCloud\\OpenApiUtil\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/alibabacloud/openapi-util/src',
+        ),
+        'AlibabaCloud\\Endpoint\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/alibabacloud/endpoint-util/src',
+        ),
+        'AlibabaCloud\\Credentials\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/alibabacloud/credentials/src',
+        ),
+        'Adbar\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/adbario/php-dot-notation/src',
+        ),
     );
 
     public static $prefixesPsr0 = array (
@@ -609,13 +668,106 @@ class ComposerStaticInit6b06af777e53914ad5800e7378b6c70c
     );
 
     public static $classMap = array (
+        'Adbar\\Dot' => __DIR__ . '/..' . '/adbario/php-dot-notation/src/Dot.php',
+        'AlibabaCloud\\Credentials\\AccessKeyCredential' => __DIR__ . '/..' . '/alibabacloud/credentials/src/AccessKeyCredential.php',
+        'AlibabaCloud\\Credentials\\BearerTokenCredential' => __DIR__ . '/..' . '/alibabacloud/credentials/src/BearerTokenCredential.php',
+        'AlibabaCloud\\Credentials\\Credential' => __DIR__ . '/..' . '/alibabacloud/credentials/src/Credential.php',
+        'AlibabaCloud\\Credentials\\Credential\\Config' => __DIR__ . '/..' . '/alibabacloud/credentials/src/Credential/Config.php',
+        'AlibabaCloud\\Credentials\\Credentials' => __DIR__ . '/..' . '/alibabacloud/credentials/src/Credentials.php',
+        'AlibabaCloud\\Credentials\\CredentialsInterface' => __DIR__ . '/..' . '/alibabacloud/credentials/src/CredentialsInterface.php',
+        'AlibabaCloud\\Credentials\\EcsRamRoleCredential' => __DIR__ . '/..' . '/alibabacloud/credentials/src/EcsRamRoleCredential.php',
+        'AlibabaCloud\\Credentials\\Filter' => __DIR__ . '/..' . '/alibabacloud/credentials/src/Filter.php',
+        'AlibabaCloud\\Credentials\\Helper' => __DIR__ . '/..' . '/alibabacloud/credentials/src/Helper.php',
+        'AlibabaCloud\\Credentials\\MockTrait' => __DIR__ . '/..' . '/alibabacloud/credentials/src/MockTrait.php',
+        'AlibabaCloud\\Credentials\\Providers\\ChainProvider' => __DIR__ . '/..' . '/alibabacloud/credentials/src/Providers/ChainProvider.php',
+        'AlibabaCloud\\Credentials\\Providers\\EcsRamRoleProvider' => __DIR__ . '/..' . '/alibabacloud/credentials/src/Providers/EcsRamRoleProvider.php',
+        'AlibabaCloud\\Credentials\\Providers\\Provider' => __DIR__ . '/..' . '/alibabacloud/credentials/src/Providers/Provider.php',
+        'AlibabaCloud\\Credentials\\Providers\\RamRoleArnProvider' => __DIR__ . '/..' . '/alibabacloud/credentials/src/Providers/RamRoleArnProvider.php',
+        'AlibabaCloud\\Credentials\\Providers\\RsaKeyPairProvider' => __DIR__ . '/..' . '/alibabacloud/credentials/src/Providers/RsaKeyPairProvider.php',
+        'AlibabaCloud\\Credentials\\RamRoleArnCredential' => __DIR__ . '/..' . '/alibabacloud/credentials/src/RamRoleArnCredential.php',
+        'AlibabaCloud\\Credentials\\Request\\AssumeRole' => __DIR__ . '/..' . '/alibabacloud/credentials/src/Request/AssumeRole.php',
+        'AlibabaCloud\\Credentials\\Request\\GenerateSessionAccessKey' => __DIR__ . '/..' . '/alibabacloud/credentials/src/Request/GenerateSessionAccessKey.php',
+        'AlibabaCloud\\Credentials\\Request\\Request' => __DIR__ . '/..' . '/alibabacloud/credentials/src/Request/Request.php',
+        'AlibabaCloud\\Credentials\\RsaKeyPairCredential' => __DIR__ . '/..' . '/alibabacloud/credentials/src/RsaKeyPairCredential.php',
+        'AlibabaCloud\\Credentials\\Signature\\BearerTokenSignature' => __DIR__ . '/..' . '/alibabacloud/credentials/src/Signature/BearerTokenSignature.php',
+        'AlibabaCloud\\Credentials\\Signature\\ShaHmac1Signature' => __DIR__ . '/..' . '/alibabacloud/credentials/src/Signature/ShaHmac1Signature.php',
+        'AlibabaCloud\\Credentials\\Signature\\ShaHmac256Signature' => __DIR__ . '/..' . '/alibabacloud/credentials/src/Signature/ShaHmac256Signature.php',
+        'AlibabaCloud\\Credentials\\Signature\\ShaHmac256WithRsaSignature' => __DIR__ . '/..' . '/alibabacloud/credentials/src/Signature/ShaHmac256WithRsaSignature.php',
+        'AlibabaCloud\\Credentials\\Signature\\SignatureInterface' => __DIR__ . '/..' . '/alibabacloud/credentials/src/Signature/SignatureInterface.php',
+        'AlibabaCloud\\Credentials\\StsCredential' => __DIR__ . '/..' . '/alibabacloud/credentials/src/StsCredential.php',
+        'AlibabaCloud\\Endpoint\\Endpoint' => __DIR__ . '/..' . '/alibabacloud/endpoint-util/src/Endpoint.php',
+        'AlibabaCloud\\OpenApiUtil\\OpenApiUtilClient' => __DIR__ . '/..' . '/alibabacloud/openapi-util/src/OpenApiUtilClient.php',
+        'AlibabaCloud\\SDK\\Dysmsapi\\V20170525\\Dysmsapi' => __DIR__ . '/..' . '/alibabacloud/dysmsapi-20170525/src/Dysmsapi.php',
+        'AlibabaCloud\\SDK\\Dysmsapi\\V20170525\\Models\\AddShortUrlRequest' => __DIR__ . '/..' . '/alibabacloud/dysmsapi-20170525/src/Models/AddShortUrlRequest.php',
+        'AlibabaCloud\\SDK\\Dysmsapi\\V20170525\\Models\\AddShortUrlResponse' => __DIR__ . '/..' . '/alibabacloud/dysmsapi-20170525/src/Models/AddShortUrlResponse.php',
+        'AlibabaCloud\\SDK\\Dysmsapi\\V20170525\\Models\\AddShortUrlResponseBody' => __DIR__ . '/..' . '/alibabacloud/dysmsapi-20170525/src/Models/AddShortUrlResponseBody.php',
+        'AlibabaCloud\\SDK\\Dysmsapi\\V20170525\\Models\\AddShortUrlResponseBody\\data' => __DIR__ . '/..' . '/alibabacloud/dysmsapi-20170525/src/Models/AddShortUrlResponseBody/data.php',
+        'AlibabaCloud\\SDK\\Dysmsapi\\V20170525\\Models\\AddSmsSignRequest' => __DIR__ . '/..' . '/alibabacloud/dysmsapi-20170525/src/Models/AddSmsSignRequest.php',
+        'AlibabaCloud\\SDK\\Dysmsapi\\V20170525\\Models\\AddSmsSignRequest\\signFileList' => __DIR__ . '/..' . '/alibabacloud/dysmsapi-20170525/src/Models/AddSmsSignRequest/signFileList.php',
+        'AlibabaCloud\\SDK\\Dysmsapi\\V20170525\\Models\\AddSmsSignResponse' => __DIR__ . '/..' . '/alibabacloud/dysmsapi-20170525/src/Models/AddSmsSignResponse.php',
+        'AlibabaCloud\\SDK\\Dysmsapi\\V20170525\\Models\\AddSmsSignResponseBody' => __DIR__ . '/..' . '/alibabacloud/dysmsapi-20170525/src/Models/AddSmsSignResponseBody.php',
+        'AlibabaCloud\\SDK\\Dysmsapi\\V20170525\\Models\\AddSmsTemplateRequest' => __DIR__ . '/..' . '/alibabacloud/dysmsapi-20170525/src/Models/AddSmsTemplateRequest.php',
+        'AlibabaCloud\\SDK\\Dysmsapi\\V20170525\\Models\\AddSmsTemplateResponse' => __DIR__ . '/..' . '/alibabacloud/dysmsapi-20170525/src/Models/AddSmsTemplateResponse.php',
+        'AlibabaCloud\\SDK\\Dysmsapi\\V20170525\\Models\\AddSmsTemplateResponseBody' => __DIR__ . '/..' . '/alibabacloud/dysmsapi-20170525/src/Models/AddSmsTemplateResponseBody.php',
+        'AlibabaCloud\\SDK\\Dysmsapi\\V20170525\\Models\\DeleteShortUrlRequest' => __DIR__ . '/..' . '/alibabacloud/dysmsapi-20170525/src/Models/DeleteShortUrlRequest.php',
+        'AlibabaCloud\\SDK\\Dysmsapi\\V20170525\\Models\\DeleteShortUrlResponse' => __DIR__ . '/..' . '/alibabacloud/dysmsapi-20170525/src/Models/DeleteShortUrlResponse.php',
+        'AlibabaCloud\\SDK\\Dysmsapi\\V20170525\\Models\\DeleteShortUrlResponseBody' => __DIR__ . '/..' . '/alibabacloud/dysmsapi-20170525/src/Models/DeleteShortUrlResponseBody.php',
+        'AlibabaCloud\\SDK\\Dysmsapi\\V20170525\\Models\\DeleteSmsSignRequest' => __DIR__ . '/..' . '/alibabacloud/dysmsapi-20170525/src/Models/DeleteSmsSignRequest.php',
+        'AlibabaCloud\\SDK\\Dysmsapi\\V20170525\\Models\\DeleteSmsSignResponse' => __DIR__ . '/..' . '/alibabacloud/dysmsapi-20170525/src/Models/DeleteSmsSignResponse.php',
+        'AlibabaCloud\\SDK\\Dysmsapi\\V20170525\\Models\\DeleteSmsSignResponseBody' => __DIR__ . '/..' . '/alibabacloud/dysmsapi-20170525/src/Models/DeleteSmsSignResponseBody.php',
+        'AlibabaCloud\\SDK\\Dysmsapi\\V20170525\\Models\\DeleteSmsTemplateRequest' => __DIR__ . '/..' . '/alibabacloud/dysmsapi-20170525/src/Models/DeleteSmsTemplateRequest.php',
+        'AlibabaCloud\\SDK\\Dysmsapi\\V20170525\\Models\\DeleteSmsTemplateResponse' => __DIR__ . '/..' . '/alibabacloud/dysmsapi-20170525/src/Models/DeleteSmsTemplateResponse.php',
+        'AlibabaCloud\\SDK\\Dysmsapi\\V20170525\\Models\\DeleteSmsTemplateResponseBody' => __DIR__ . '/..' . '/alibabacloud/dysmsapi-20170525/src/Models/DeleteSmsTemplateResponseBody.php',
+        'AlibabaCloud\\SDK\\Dysmsapi\\V20170525\\Models\\ModifySmsSignRequest' => __DIR__ . '/..' . '/alibabacloud/dysmsapi-20170525/src/Models/ModifySmsSignRequest.php',
+        'AlibabaCloud\\SDK\\Dysmsapi\\V20170525\\Models\\ModifySmsSignRequest\\signFileList' => __DIR__ . '/..' . '/alibabacloud/dysmsapi-20170525/src/Models/ModifySmsSignRequest/signFileList.php',
+        'AlibabaCloud\\SDK\\Dysmsapi\\V20170525\\Models\\ModifySmsSignResponse' => __DIR__ . '/..' . '/alibabacloud/dysmsapi-20170525/src/Models/ModifySmsSignResponse.php',
+        'AlibabaCloud\\SDK\\Dysmsapi\\V20170525\\Models\\ModifySmsSignResponseBody' => __DIR__ . '/..' . '/alibabacloud/dysmsapi-20170525/src/Models/ModifySmsSignResponseBody.php',
+        'AlibabaCloud\\SDK\\Dysmsapi\\V20170525\\Models\\ModifySmsTemplateRequest' => __DIR__ . '/..' . '/alibabacloud/dysmsapi-20170525/src/Models/ModifySmsTemplateRequest.php',
+        'AlibabaCloud\\SDK\\Dysmsapi\\V20170525\\Models\\ModifySmsTemplateResponse' => __DIR__ . '/..' . '/alibabacloud/dysmsapi-20170525/src/Models/ModifySmsTemplateResponse.php',
+        'AlibabaCloud\\SDK\\Dysmsapi\\V20170525\\Models\\ModifySmsTemplateResponseBody' => __DIR__ . '/..' . '/alibabacloud/dysmsapi-20170525/src/Models/ModifySmsTemplateResponseBody.php',
+        'AlibabaCloud\\SDK\\Dysmsapi\\V20170525\\Models\\QuerySendDetailsRequest' => __DIR__ . '/..' . '/alibabacloud/dysmsapi-20170525/src/Models/QuerySendDetailsRequest.php',
+        'AlibabaCloud\\SDK\\Dysmsapi\\V20170525\\Models\\QuerySendDetailsResponse' => __DIR__ . '/..' . '/alibabacloud/dysmsapi-20170525/src/Models/QuerySendDetailsResponse.php',
+        'AlibabaCloud\\SDK\\Dysmsapi\\V20170525\\Models\\QuerySendDetailsResponseBody' => __DIR__ . '/..' . '/alibabacloud/dysmsapi-20170525/src/Models/QuerySendDetailsResponseBody.php',
+        'AlibabaCloud\\SDK\\Dysmsapi\\V20170525\\Models\\QuerySendDetailsResponseBody\\smsSendDetailDTOs' => __DIR__ . '/..' . '/alibabacloud/dysmsapi-20170525/src/Models/QuerySendDetailsResponseBody/smsSendDetailDTOs.php',
+        'AlibabaCloud\\SDK\\Dysmsapi\\V20170525\\Models\\QuerySendDetailsResponseBody\\smsSendDetailDTOs\\smsSendDetailDTO' => __DIR__ . '/..' . '/alibabacloud/dysmsapi-20170525/src/Models/QuerySendDetailsResponseBody/smsSendDetailDTOs/smsSendDetailDTO.php',
+        'AlibabaCloud\\SDK\\Dysmsapi\\V20170525\\Models\\QueryShortUrlRequest' => __DIR__ . '/..' . '/alibabacloud/dysmsapi-20170525/src/Models/QueryShortUrlRequest.php',
+        'AlibabaCloud\\SDK\\Dysmsapi\\V20170525\\Models\\QueryShortUrlResponse' => __DIR__ . '/..' . '/alibabacloud/dysmsapi-20170525/src/Models/QueryShortUrlResponse.php',
+        'AlibabaCloud\\SDK\\Dysmsapi\\V20170525\\Models\\QueryShortUrlResponseBody' => __DIR__ . '/..' . '/alibabacloud/dysmsapi-20170525/src/Models/QueryShortUrlResponseBody.php',
+        'AlibabaCloud\\SDK\\Dysmsapi\\V20170525\\Models\\QueryShortUrlResponseBody\\data' => __DIR__ . '/..' . '/alibabacloud/dysmsapi-20170525/src/Models/QueryShortUrlResponseBody/data.php',
+        'AlibabaCloud\\SDK\\Dysmsapi\\V20170525\\Models\\QuerySmsSignRequest' => __DIR__ . '/..' . '/alibabacloud/dysmsapi-20170525/src/Models/QuerySmsSignRequest.php',
+        'AlibabaCloud\\SDK\\Dysmsapi\\V20170525\\Models\\QuerySmsSignResponse' => __DIR__ . '/..' . '/alibabacloud/dysmsapi-20170525/src/Models/QuerySmsSignResponse.php',
+        'AlibabaCloud\\SDK\\Dysmsapi\\V20170525\\Models\\QuerySmsSignResponseBody' => __DIR__ . '/..' . '/alibabacloud/dysmsapi-20170525/src/Models/QuerySmsSignResponseBody.php',
+        'AlibabaCloud\\SDK\\Dysmsapi\\V20170525\\Models\\QuerySmsTemplateRequest' => __DIR__ . '/..' . '/alibabacloud/dysmsapi-20170525/src/Models/QuerySmsTemplateRequest.php',
+        'AlibabaCloud\\SDK\\Dysmsapi\\V20170525\\Models\\QuerySmsTemplateResponse' => __DIR__ . '/..' . '/alibabacloud/dysmsapi-20170525/src/Models/QuerySmsTemplateResponse.php',
+        'AlibabaCloud\\SDK\\Dysmsapi\\V20170525\\Models\\QuerySmsTemplateResponseBody' => __DIR__ . '/..' . '/alibabacloud/dysmsapi-20170525/src/Models/QuerySmsTemplateResponseBody.php',
+        'AlibabaCloud\\SDK\\Dysmsapi\\V20170525\\Models\\SendBatchSmsRequest' => __DIR__ . '/..' . '/alibabacloud/dysmsapi-20170525/src/Models/SendBatchSmsRequest.php',
+        'AlibabaCloud\\SDK\\Dysmsapi\\V20170525\\Models\\SendBatchSmsResponse' => __DIR__ . '/..' . '/alibabacloud/dysmsapi-20170525/src/Models/SendBatchSmsResponse.php',
+        'AlibabaCloud\\SDK\\Dysmsapi\\V20170525\\Models\\SendBatchSmsResponseBody' => __DIR__ . '/..' . '/alibabacloud/dysmsapi-20170525/src/Models/SendBatchSmsResponseBody.php',
+        'AlibabaCloud\\SDK\\Dysmsapi\\V20170525\\Models\\SendSmsRequest' => __DIR__ . '/..' . '/alibabacloud/dysmsapi-20170525/src/Models/SendSmsRequest.php',
+        'AlibabaCloud\\SDK\\Dysmsapi\\V20170525\\Models\\SendSmsResponse' => __DIR__ . '/..' . '/alibabacloud/dysmsapi-20170525/src/Models/SendSmsResponse.php',
+        'AlibabaCloud\\SDK\\Dysmsapi\\V20170525\\Models\\SendSmsResponseBody' => __DIR__ . '/..' . '/alibabacloud/dysmsapi-20170525/src/Models/SendSmsResponseBody.php',
+        'AlibabaCloud\\Tea\\Exception\\TeaError' => __DIR__ . '/..' . '/alibabacloud/tea/src/Exception/TeaError.php',
+        'AlibabaCloud\\Tea\\Exception\\TeaRetryError' => __DIR__ . '/..' . '/alibabacloud/tea/src/Exception/TeaRetryError.php',
+        'AlibabaCloud\\Tea\\Exception\\TeaUnableRetryError' => __DIR__ . '/..' . '/alibabacloud/tea/src/Exception/TeaUnableRetryError.php',
+        'AlibabaCloud\\Tea\\Helper' => __DIR__ . '/..' . '/alibabacloud/tea/src/Helper.php',
+        'AlibabaCloud\\Tea\\Model' => __DIR__ . '/..' . '/alibabacloud/tea/src/Model.php',
+        'AlibabaCloud\\Tea\\Parameter' => __DIR__ . '/..' . '/alibabacloud/tea/src/Parameter.php',
+        'AlibabaCloud\\Tea\\Request' => __DIR__ . '/..' . '/alibabacloud/tea/src/Request.php',
+        'AlibabaCloud\\Tea\\Response' => __DIR__ . '/..' . '/alibabacloud/tea/src/Response.php',
+        'AlibabaCloud\\Tea\\Tea' => __DIR__ . '/..' . '/alibabacloud/tea/src/Tea.php',
+        'AlibabaCloud\\Tea\\Utils\\Utils' => __DIR__ . '/..' . '/alibabacloud/tea-utils/src/Utils.php',
+        'AlibabaCloud\\Tea\\Utils\\Utils\\RuntimeOptions' => __DIR__ . '/..' . '/alibabacloud/tea-utils/src/Utils/RuntimeOptions.php',
+        'AlibabaCloud\\Tea\\XML\\ArrayToXml' => __DIR__ . '/..' . '/alibabacloud/tea-xml/src/ArrayToXml.php',
+        'AlibabaCloud\\Tea\\XML\\XML' => __DIR__ . '/..' . '/alibabacloud/tea-xml/src/XML.php',
         'App\\Amqp\\Consumer\\DelayDirectConsumer' => __DIR__ . '/../..' . '/app/Amqp/Consumer/DelayDirectConsumer.php',
         'App\\Amqp\\Producer\\DelayDirectProducer' => __DIR__ . '/../..' . '/app/Amqp/Producer/DelayDirectProducer.php',
         'App\\Controller\\AbstractController' => __DIR__ . '/../..' . '/app/Controller/AbstractController.php',
         'App\\Controller\\IndexController' => __DIR__ . '/../..' . '/app/Controller/IndexController.php',
         'App\\Controller\\MemberAuth' => __DIR__ . '/../..' . '/app/Controller/MemberAuth.php',
         'App\\Controller\\OrderTestController' => __DIR__ . '/../..' . '/app/Controller/OrderTestController.php',
+        'App\\Controller\\PayMethod' => __DIR__ . '/../..' . '/app/Controller/PayMethod.php',
         'App\\Dao\\MemberAuth' => __DIR__ . '/../..' . '/app/Dao/MemberAuth.php',
+        'App\\Dao\\PayMethod' => __DIR__ . '/../..' . '/app/Dao/PayMethod.php',
         'App\\Exception\\Handler\\AppExceptionHandler' => __DIR__ . '/../..' . '/app/Exception/Handler/AppExceptionHandler.php',
         'App\\Listener\\DbQueryExecutedListener' => __DIR__ . '/../..' . '/app/Listener/DbQueryExecutedListener.php',
         'App\\Listener\\ResumeExitCoordinatorListener' => __DIR__ . '/../..' . '/app/Listener/ResumeExitCoordinatorListener.php',
@@ -626,6 +778,7 @@ class ComposerStaticInit6b06af777e53914ad5800e7378b6c70c
         'App\\Model\\OrderTest' => __DIR__ . '/../..' . '/app/Model/OrderTest.php',
         'App\\Model\\PersonInfo' => __DIR__ . '/../..' . '/app/Model/PersonInfo.php',
         'App\\Model\\SpecialCert' => __DIR__ . '/../..' . '/app/Model/SpecialCert.php',
+        'App\\Service\\AliSmsService' => __DIR__ . '/../..' . '/app/Service/AliSmsService.php',
         'App\\Service\\HttpRequestService' => __DIR__ . '/../..' . '/app/Service/HttpRequestService.php',
         'App\\Service\\TextRecognitionService' => __DIR__ . '/../..' . '/app/Service/TextRecognitionService.php',
         'App\\Service\\UploadServer' => __DIR__ . '/../..' . '/app/Service/UploadServer.php',
@@ -746,6 +899,17 @@ class ComposerStaticInit6b06af777e53914ad5800e7378b6c70c
         'Composer\\XdebugHandler\\Process' => __DIR__ . '/..' . '/composer/xdebug-handler/src/Process.php',
         'Composer\\XdebugHandler\\Status' => __DIR__ . '/..' . '/composer/xdebug-handler/src/Status.php',
         'Composer\\XdebugHandler\\XdebugHandler' => __DIR__ . '/..' . '/composer/xdebug-handler/src/XdebugHandler.php',
+        'Darabonba\\GatewaySpi\\Client' => __DIR__ . '/..' . '/alibabacloud/gateway-spi/src/Client.php',
+        'Darabonba\\GatewaySpi\\Models\\AttributeMap' => __DIR__ . '/..' . '/alibabacloud/gateway-spi/src/Models/AttributeMap.php',
+        'Darabonba\\GatewaySpi\\Models\\InterceptorContext' => __DIR__ . '/..' . '/alibabacloud/gateway-spi/src/Models/InterceptorContext.php',
+        'Darabonba\\GatewaySpi\\Models\\InterceptorContext\\configuration' => __DIR__ . '/..' . '/alibabacloud/gateway-spi/src/Models/InterceptorContext/configuration.php',
+        'Darabonba\\GatewaySpi\\Models\\InterceptorContext\\request' => __DIR__ . '/..' . '/alibabacloud/gateway-spi/src/Models/InterceptorContext/request.php',
+        'Darabonba\\GatewaySpi\\Models\\InterceptorContext\\response' => __DIR__ . '/..' . '/alibabacloud/gateway-spi/src/Models/InterceptorContext/response.php',
+        'Darabonba\\OpenApi\\Models\\Config' => __DIR__ . '/..' . '/alibabacloud/darabonba-openapi/src/Models/Config.php',
+        'Darabonba\\OpenApi\\Models\\GlobalParameters' => __DIR__ . '/..' . '/alibabacloud/darabonba-openapi/src/Models/GlobalParameters.php',
+        'Darabonba\\OpenApi\\Models\\OpenApiRequest' => __DIR__ . '/..' . '/alibabacloud/darabonba-openapi/src/Models/OpenApiRequest.php',
+        'Darabonba\\OpenApi\\Models\\Params' => __DIR__ . '/..' . '/alibabacloud/darabonba-openapi/src/Models/Params.php',
+        'Darabonba\\OpenApi\\OpenApiClient' => __DIR__ . '/..' . '/alibabacloud/darabonba-openapi/src/OpenApiClient.php',
         'DeepCopy\\DeepCopy' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/DeepCopy.php',
         'DeepCopy\\Exception\\CloneException' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/Exception/CloneException.php',
         'DeepCopy\\Exception\\PropertyException' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/Exception/PropertyException.php',
@@ -2341,6 +2505,8 @@ class ComposerStaticInit6b06af777e53914ad5800e7378b6c70c
         'Monolog\\Test\\TestCase' => __DIR__ . '/..' . '/monolog/monolog/src/Monolog/Test/TestCase.php',
         'Monolog\\Utils' => __DIR__ . '/..' . '/monolog/monolog/src/Monolog/Utils.php',
         'Normalizer' => __DIR__ . '/..' . '/symfony/polyfill-intl-normalizer/Resources/stubs/Normalizer.php',
+        'OneSm\\Sm3' => __DIR__ . '/..' . '/lizhichao/one-sm/src/Sm3.php',
+        'OneSm\\Sm4' => __DIR__ . '/..' . '/lizhichao/one-sm/src/Sm4.php',
         'PHPUnit\\Exception' => __DIR__ . '/..' . '/phpunit/phpunit/src/Exception.php',
         'PHPUnit\\Framework\\ActualValueIsNotAnObjectException' => __DIR__ . '/..' . '/phpunit/phpunit/src/Framework/Exception/ActualValueIsNotAnObjectException.php',
         'PHPUnit\\Framework\\Assert' => __DIR__ . '/..' . '/phpunit/phpunit/src/Framework/Assert.php',

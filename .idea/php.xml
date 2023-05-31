@@ -135,6 +135,17 @@
       <path value="$PROJECT_DIR$/vendor/hyperf/translation" />
       <path value="$PROJECT_DIR$/vendor/hyperf/validation" />
       <path value="$PROJECT_DIR$/vendor/hyperf/watcher" />
+      <path value="$PROJECT_DIR$/vendor/lizhichao/one-sm" />
+      <path value="$PROJECT_DIR$/vendor/adbario/php-dot-notation" />
+      <path value="$PROJECT_DIR$/vendor/alibabacloud/credentials" />
+      <path value="$PROJECT_DIR$/vendor/alibabacloud/gateway-spi" />
+      <path value="$PROJECT_DIR$/vendor/alibabacloud/darabonba-openapi" />
+      <path value="$PROJECT_DIR$/vendor/alibabacloud/tea" />
+      <path value="$PROJECT_DIR$/vendor/alibabacloud/openapi-util" />
+      <path value="$PROJECT_DIR$/vendor/alibabacloud/tea-xml" />
+      <path value="$PROJECT_DIR$/vendor/alibabacloud/tea-utils" />
+      <path value="$PROJECT_DIR$/vendor/alibabacloud/dysmsapi-20170525" />
+      <path value="$PROJECT_DIR$/vendor/alibabacloud/endpoint-util" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="8.0" />

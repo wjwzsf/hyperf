@@ -13,6 +13,8 @@
     "license": "Apache-2.0",
     "require": {
         "php": ">=8.0",
+        "alibabacloud/darabonba-openapi": "^0.2.9",
+        "alibabacloud/dysmsapi-20170525": "^2.0",
         "hyperf/amqp": "^3.0",
         "hyperf/cache": "~3.0.0",
         "hyperf/command": "~3.0.0",
