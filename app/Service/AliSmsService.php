@@ -15,8 +15,8 @@ class AliSmsService
     public function __construct()
     {
         $this->key = env('SMS_KEY');
-        $this->secret = env('SMS_KEY');
-        $this->sign = env('SMS_KEY');
+        $this->secret = env('SMS_SECRET');
+        $this->sign = env('SMS_SIGN');
         $this->tempcode = env('SMS_TEMPCODE');
     }
 

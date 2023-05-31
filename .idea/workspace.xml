@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="35965e68-5e65-409f-bc21-635c2a6c9c24" name="默认变更列表" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Service/AliSmsService.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/autoload/sms.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/logs/hyperf.log" beforeDir="false" afterPath="$PROJECT_DIR$/runtime/logs/hyperf.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Service/AliSmsService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Service/AliSmsService.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -194,7 +191,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Service" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -205,9 +202,9 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\php_code\hyperf-skeleton\user\hyperf" />
       <recent name="E:\php_code\hyperf-skeleton\user\hyperf\app\Service" />
       <recent name="E:\php_code\hyperf-skeleton\user\hyperf\public\images" />
-      <recent name="E:\php_code\hyperf-skeleton\user\hyperf" />
       <recent name="E:\php_code\hyperf-skeleton\user\hyperf\vendor" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -235,7 +232,7 @@
       <workItem from="1685492854787" duration="2802000" />
       <workItem from="1685512353398" duration="1063000" />
       <workItem from="1685513991465" duration="30000" />
-      <workItem from="1685520537561" duration="479000" />
+      <workItem from="1685520537561" duration="931000" />
     </task>
     <task id="LOCAL-00001" summary="未能遵守PSR-4自动加载标准">
       <created>1684481589369</created>
@@ -545,7 +542,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685513941514</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="去除所有配置值">
+      <created>1685521053879</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1685521053879</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -553,7 +557,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="银行卡简单识别" />
     <MESSAGE value="修改ocr识别" />
     <MESSAGE value="特殊认证上传接口" />
     <MESSAGE value="个人实名认证审核提交成功" />
@@ -578,7 +581,8 @@
     <MESSAGE value="保存优先付款方式修改提示语" />
     <MESSAGE value="vendor文件更新" />
     <MESSAGE value="优化实名认证+收款方式功能 完成" />
-    <option name="LAST_COMMIT_MESSAGE" value="优化实名认证+收款方式功能 完成" />
+    <MESSAGE value="去除所有配置值" />
+    <option name="LAST_COMMIT_MESSAGE" value="去除所有配置值" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
