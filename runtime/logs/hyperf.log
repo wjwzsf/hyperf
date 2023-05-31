@@ -701,3 +701,4 @@
 [2023-05-31 02:38:27] sql.INFO: [38.99] select * from `ly_paybind` where (`member_id` = '105743' and `bind_type` = '0' and `is_del` = '0') limit 1 [] []
 [2023-05-31 03:28:12] sql.INFO: [184.72] select `card` from `ly_person_info` where `member_id` = '105743' limit 1 [] []
 [2023-05-31 03:28:12] sql.INFO: [43.79] select * from `ly_paybind` where (`member_id` = '105743' and `bind_type` = '0' and `is_del` = '0') limit 1 [] []
+[2023-05-31 06:04:30] sql.INFO: [185.33] update `ly_person_info` set `collection_type` = '1' where `member_id` = '7293' [] []
