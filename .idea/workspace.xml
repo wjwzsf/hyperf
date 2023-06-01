@@ -1,9 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="35965e68-5e65-409f-bc21-635c2a6c9c24" name="默认变更列表" comment="">
+    <list default="true" id="35965e68-5e65-409f-bc21-635c2a6c9c24" name="默认变更列表" comment="去除所有配置值">
+      <change afterPath="$PROJECT_DIR$/app/JsonRpc/TestService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/JsonRpc/TestServiceInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/autoload/services.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/hyperf.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/hyperf.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Service/AliSmsService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Service/AliSmsService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/autoload/server.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/autoload/server.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/container/aspects.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/container/classes.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/container/proxy/App_Controller_AbstractController.proxy.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/container/proxy/App_Controller_IndexController.proxy.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/container/scan.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/logs/hyperf.log" beforeDir="false" afterPath="$PROJECT_DIR$/runtime/logs/hyperf.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_files.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_files.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/installed.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/installed.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/installed.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/installed.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,7 +39,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="featrue-bankcard" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -179,6 +198,14 @@
       <path value="$PROJECT_DIR$/vendor/alibabacloud/tea-utils" />
       <path value="$PROJECT_DIR$/vendor/alibabacloud/dysmsapi-20170525" />
       <path value="$PROJECT_DIR$/vendor/alibabacloud/endpoint-util" />
+      <path value="$PROJECT_DIR$/vendor/markrogoyski/math-php" />
+      <path value="$PROJECT_DIR$/vendor/hyperf/rpc" />
+      <path value="$PROJECT_DIR$/vendor/hyperf/service-governance" />
+      <path value="$PROJECT_DIR$/vendor/hyperf/load-balancer" />
+      <path value="$PROJECT_DIR$/vendor/hyperf/service-governance-nacos" />
+      <path value="$PROJECT_DIR$/vendor/hyperf/rpc-server" />
+      <path value="$PROJECT_DIR$/vendor/hyperf/nacos" />
+      <path value="$PROJECT_DIR$/vendor/hyperf/json-rpc" />
     </include_path>
   </component>
   <component name="ProjectId" id="2PzVDgKrmddVRPm6jYR07BRsb92" />
@@ -197,6 +224,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -233,6 +261,9 @@
       <workItem from="1685512353398" duration="1063000" />
       <workItem from="1685513991465" duration="30000" />
       <workItem from="1685520537561" duration="931000" />
+      <workItem from="1685523719716" duration="49000" />
+      <workItem from="1685604204587" duration="1139000" />
+      <workItem from="1685607668237" duration="1691000" />
     </task>
     <task id="LOCAL-00001" summary="未能遵守PSR-4自动加载标准">
       <created>1684481589369</created>

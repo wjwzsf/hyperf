@@ -31,6 +31,16 @@ return [
                 'document_root' => BASE_PATH . '/public', // 静态文件根目录
             ],
         ],
+        [
+            'name' => 'jsonrpc-http',
+            'type' => Server::SERVER_HTTP,
+            'host' => '0.0.0.0',
+            'port' => 9504,
+            'sock_type' => SWOOLE_SOCK_TCP,
+            'callbacks' => [
+                Event::ON_REQUEST => [Hyperf\JsonRpc\HttpServer::class, 'onRequest'],
+            ],
+        ],
     ],
     'settings' => [
         Constant::OPTION_ENABLE_COROUTINE => true,

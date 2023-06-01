@@ -151,6 +151,14 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/alibabacloud/tea-utils" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/alibabacloud/dysmsapi-20170525" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/alibabacloud/endpoint-util" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/markrogoyski/math-php" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/hyperf/rpc" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/hyperf/service-governance" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/hyperf/load-balancer" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/hyperf/service-governance-nacos" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/hyperf/rpc-server" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/hyperf/nacos" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/hyperf/json-rpc" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

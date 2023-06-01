@@ -146,6 +146,14 @@
       <path value="$PROJECT_DIR$/vendor/alibabacloud/tea-utils" />
       <path value="$PROJECT_DIR$/vendor/alibabacloud/dysmsapi-20170525" />
       <path value="$PROJECT_DIR$/vendor/alibabacloud/endpoint-util" />
+      <path value="$PROJECT_DIR$/vendor/markrogoyski/math-php" />
+      <path value="$PROJECT_DIR$/vendor/hyperf/rpc" />
+      <path value="$PROJECT_DIR$/vendor/hyperf/service-governance" />
+      <path value="$PROJECT_DIR$/vendor/hyperf/load-balancer" />
+      <path value="$PROJECT_DIR$/vendor/hyperf/service-governance-nacos" />
+      <path value="$PROJECT_DIR$/vendor/hyperf/rpc-server" />
+      <path value="$PROJECT_DIR$/vendor/hyperf/nacos" />
+      <path value="$PROJECT_DIR$/vendor/hyperf/json-rpc" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="8.0" />
